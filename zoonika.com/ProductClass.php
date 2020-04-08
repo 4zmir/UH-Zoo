@@ -3,18 +3,15 @@ include "Database.php";
 ini_set("display_errors",E_ALL);
 
 
-Class AddAnimalClass
+Class ProductClass
 {
 	public $post;
 	
-	public $animal_name;
-	public $department_id;
-	public $animal_DOB;
-	public $animal_gender;
-	public $animal_breed;
-	public $animal_display;
+	public $product_name;
+	public $product_type_id;
+	public $product_price;
 	public $user_id;
-	public $animal_time;
+
 	public $db;
 	public $result;
 	public function __construct(Array $post)
@@ -23,13 +20,11 @@ Class AddAnimalClass
 		
 		$this->post = $post; // $_POST array from form;
 		$this->id =$_COOKIE['user_id'];
-		$this->animal_name = $this->post['animal_name'];
-		$this->department_id = 1;
 		$this->user_id=$_COOKIE['user_id'];
-		$this->animal_DOB = $this->post['animal_DOB'];
-		$this->animal_gender = $this->post['animal_gender'];
-		$this->animal_breed = $this->post['animal_breed'];
-		$this->animal_display = $this->post['animal_display'];
+		$this->product_name = $this->post['product_name'];
+		$this->product_price = $this->post['product_price'];
+		$this->product_type_id = $this->post['product_type_id'];
+		
 		
 		
 
@@ -37,13 +32,12 @@ Class AddAnimalClass
 		 
 		$this->db->query($sql);
 		$this->result = $this->db->single();
-		
 		$this->checkCookie();
 		$this->profileFill();
 	}
 	public function render(){
 	  echo "<PRE>";
-	  print_r($this->result);
+	  print_r($this->product_type_id);
 	}
 	
 	public function checkCookie(){
@@ -55,7 +49,7 @@ Class AddAnimalClass
 	
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
-		$sql = "INSERT INTO  animal (animal_name, department_id, animal_DOB, animal_gender, animal_breed, animal_display, user_id) VALUES ('$this->animal_name', '$this->department_id', '$this->animal_DOB', '$this->animal_gender', '$this->animal_breed', '$this->animal_display', '$this->user_id')";
+		$sql = "INSERT INTO  product (product_name, product_price, product_type_id, user_id) VALUES ('$this->product_name', '$this->product_price', '$this->product_type_id', '$this->user_id')";
 		
 		try{
 		$this->db->query($sql);
@@ -64,7 +58,7 @@ Class AddAnimalClass
 			echo $e->getMesssage();
 			die('died');
 		}
-		header("Location: http://www.zoonika.com/addAnimalList.php");
+		header("Location: http://www.zoonika.com/prdtInput.php");
 		}
 	}
 }

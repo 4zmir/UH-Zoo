@@ -4,7 +4,7 @@ session_start();
 include "Database.php";
 
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
@@ -12,6 +12,11 @@ $db = new Database();
 $sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
+
+$sql="SELECT * from product_type";
+$db->query($sql);
+$tp = $db->resultSet();
+
 
 
 ?>
@@ -50,7 +55,7 @@ $user = $db->single();
 </body> 
 
 
-<form action="" method="POST">
+<form action="productScript.php" method="POST">
 
 
 
@@ -61,12 +66,21 @@ $user = $db->single();
      <br>
     <input type="text" placeholder="Enter Product description" name="product_name" required>
      <br>
-        <label for="price_price"><b>Product Price $:</b></label>
-     <br>
+	 <label for="product_type_id"><b>Product type<b></label><br>
+     <select name ="product_type_id" >
+					<option value="" selected >--Select Item--</option>
+					<?PHP 
+					foreach($tp as $ptp){
+					echo "<option value='$ptp->product_type_id'>$ptp->product_type_name </option>";
+					}							
+					?>
+	</select><br>
+     <label for="product_price"><b>Product Price $:</b></label>
+      <br>
         <input type="number" step=0.01 min = 0.00 placeholder="0.00" name="product_price" required>
-     <br>
-       <button class="cancel" type="button" onclick="location.href='rideInput.php'">Cancel</button >
-       <button class="button" type="submit">Submit</button >
+      <br>
+    <button class="cancel" type="button" onclick="location.href='rideInput.php'">Cancel</button >
+    <button class="button" type="submit">Submit</button >
     
   </div>
 

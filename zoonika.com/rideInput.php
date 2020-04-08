@@ -4,7 +4,7 @@ session_start();
 include "Database.php";
 
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
@@ -47,7 +47,7 @@ $user = $db->single();
    <script src="sidebar.js"></script>
    
    </body>
-   <form action="" method="post">
+   <form action="rideScript.php" method="post">
 
    <div id="container" style='margin-bottom:6em;text-align:center;'>
       <h1> INPUT NEW RIDE</h1>

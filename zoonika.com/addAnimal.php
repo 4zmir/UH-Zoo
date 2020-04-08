@@ -4,7 +4,7 @@ session_start();
 include "Database.php";
 
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
@@ -70,6 +70,7 @@ $user = $db->single();
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select><br>
+			
 
             <button class="cancel" type="button" onclick="location.href='addAnimal.php'">Cancel</button >
             <button class="button" type="submit">Submit</button >

@@ -15,13 +15,19 @@ if(!$_COOKIE['user_id']){
 }
 if ($_COOKIE['user_id']){
 
-	$sql="SELECT product_name,product_price  from product order by product_name";
+	$sql="SELECT product.product_name, product.product_price, product.product_time, u.user_fname, u.user_lname 
+	FROM product 
+	LEFT JOIN `user`as u ON u.user_id = product.user_id
+	order by product_name";
 		
 	$db->query($sql);
 	$result = $db->resultSet();
 	//$rowNum = $db->rowCount();
 	// echo "<pre>";
 	// echo print_r($result);die;
+	
+	
+	
 }
 
 ?>
@@ -65,6 +71,8 @@ if ($_COOKIE['user_id']){
 						<th> #</th>
 					  <th>Product Name</th>
 					  <th>Price </th>
+					   <th>Who Added </th>
+					    <th>When Added </th>
 					</tr>
 				  </thead>
 
@@ -76,7 +84,10 @@ if ($_COOKIE['user_id']){
 						echo "<tr $shade>
 								<td>$num</td>
 								<td>$item->product_name</td>
-								<td>$ $item->product_price</td>
+								<td>$item->product_price</td>
+								<td>$item->user_fname $item->user_lname</td>
+								<td>$item->product_time</td>
+								
 							</tr>";
 							$num++;
 					}

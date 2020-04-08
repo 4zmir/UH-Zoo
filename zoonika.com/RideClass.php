@@ -3,18 +3,15 @@ include "Database.php";
 ini_set("display_errors",E_ALL);
 
 
-Class AddAnimalClass
+Class RideClass
 {
 	public $post;
 	
-	public $animal_name;
-	public $department_id;
-	public $animal_DOB;
-	public $animal_gender;
-	public $animal_breed;
-	public $animal_display;
+	public $ride_name;
+	public $ride_time;
+	public $department_id = 3;
 	public $user_id;
-	public $animal_time;
+
 	public $db;
 	public $result;
 	public function __construct(Array $post)
@@ -23,27 +20,21 @@ Class AddAnimalClass
 		
 		$this->post = $post; // $_POST array from form;
 		$this->id =$_COOKIE['user_id'];
-		$this->animal_name = $this->post['animal_name'];
-		$this->department_id = 1;
 		$this->user_id=$_COOKIE['user_id'];
-		$this->animal_DOB = $this->post['animal_DOB'];
-		$this->animal_gender = $this->post['animal_gender'];
-		$this->animal_breed = $this->post['animal_breed'];
-		$this->animal_display = $this->post['animal_display'];
-		
-		
+		$this->ride_name = $this->post['ride_name'];
+		$this->department_id = 3;
+	
 
 		$sql = "SELECT * FROM user WHERE user_id = '$this->user_id'";
 		 
 		$this->db->query($sql);
 		$this->result = $this->db->single();
-		
 		$this->checkCookie();
 		$this->profileFill();
 	}
 	public function render(){
 	  echo "<PRE>";
-	  print_r($this->result);
+	  print_r($this->user_id);
 	}
 	
 	public function checkCookie(){
@@ -55,7 +46,7 @@ Class AddAnimalClass
 	
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
-		$sql = "INSERT INTO  animal (animal_name, department_id, animal_DOB, animal_gender, animal_breed, animal_display, user_id) VALUES ('$this->animal_name', '$this->department_id', '$this->animal_DOB', '$this->animal_gender', '$this->animal_breed', '$this->animal_display', '$this->user_id')";
+		$sql = "INSERT INTO ride (ride_name, department_id, user_id) VALUES ('$this->ride_name', '$this->department_id', '$this->user_id')";
 		
 		try{
 		$this->db->query($sql);
@@ -64,7 +55,7 @@ Class AddAnimalClass
 			echo $e->getMesssage();
 			die('died');
 		}
-		header("Location: http://www.zoonika.com/addAnimalList.php");
+		header("Location: http://www.zoonika.com/rideInput.php");
 		}
 	}
 }

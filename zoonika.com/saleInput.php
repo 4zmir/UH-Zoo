@@ -3,8 +3,19 @@ session_start();
 
 include "Database.php";
 
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+	
+	
+	$obj = json_decode($_POST['cart']);
+
+
+	#foreach($obj as $o){
+		#echo "<div style='margin-bottom:.2em;background:lightblue;font-size:1.4em;'>" . $o->qty . " " . $o->description . "@" . $o->price . "</div>";
+	#}
+}
+
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
@@ -12,6 +23,10 @@ $db = new Database();
 $sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
+
+$sql="SELECT * from product";
+$db->query($sql);
+$items = $db->resultSet();
 
 
 ?>
@@ -27,7 +42,21 @@ $user = $db->single();
 </head>
 
 <body>
+<style>
+#forSaleProductsTbl{
+	width:70%;
+	margin:auto;
+}
 
+#forSaleProductsTbl  th td tr{
+	padding:1em !important;
+}
+.clickable{
+    cursor: pointer;
+    padding: 5px;
+    color: blue;	
+}
+</style>
     <div id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">
             <span></span>
@@ -47,23 +76,112 @@ $user = $db->single();
 
     <div id="container" style='margin-bottom:6em;text-align:center;'>
 		<h1> INPUT NEW SALE</h1>
-			<form  id="submit" action="" method="POST">
-                
-        
-                <label for="product_id">Product ID</label><br>
-                <input type="number" placeholder="Enter Product id" name="product_id" required><br>
-                
-                <label for="sale_date">Sale date</label><br>
-                <input type="date" placeholder="Enter Sale date" name="sale_date" value="YYYY-MM-DD" required ><br>
-
-               <button class="cancel" type="button" onclick="location.href='.php'">Cancel</button >
-             <button class="button" type="submit">Submit</button >  
-        </form>
+			<table id="forSaleProductsTbl">
+				<thead>
+					<th>Select Product</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th></th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<select id="productList" style="width:300px;">
+								<option selected>--Select Item--</option>
+								<?PHP 
+									foreach($items as $item){
+										echo "<option value='$item->product_id|$item->product_price'>$item->product_name</option>";
+									}							
+								?>
+							</select>
+						</td>
+						<td><input type="text" size=10 id="qty"><input type="hidden" id="pid"></td>
+						<td><span id="priceField"></span></td>
+						<td><button onclick="addToCart()" style="background:yellowgreen;color:green;">Add to cart</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<div style="margin-top:3em;margin-bottom:3em;">
+				<table id="cartTbl" style="width: 80%;margin: auto;">
+				</table>
+				<form method="POST" action= "saleScript.php" method="post">
+					<input type="hidden" name="cart">
+					<button style="background:greenyellow;" onclick="checkout(event);">Checkout</button>
+				</form>
+			</div>
     </div>
 
         
 
     <script src="sidebar.js"></script>
+	<script>
+		var cart = [];
+		
+		document.getElementById('productList').addEventListener('change',function(event){
+			var i = event.target.options.selectedIndex;
+			var pid = event.target.options[i].value.split('|')[0];
+			var price = event.target.options[i].value.split('|')[1];
+			document.getElementById('pid').innerText =  pid;
+			document.getElementById('priceField').innerText =  price;
+		});
+		
+		function addToCart(){
+			var pid = document.getElementById('pid');
+			var price = document.getElementById('priceField');
+			var qty = document.getElementById('qty');
+			var description = document.getElementById('productList');
+			
+			if(qty.value == '' || isNaN(qty.value)){
+				alert('Please enter a quantity before adding to cart!!');
+				return;
+			}
+			
+			description = description.options[description.options.selectedIndex].innerText;
+					
+			var obj = {"pid":pid.innerText*1,"description":description,"qty":qty.value*1,"price":price.innerText*1};
+			cart.push(obj);
+			renderCart();
+		}
+		
+		function renderCart(){
+			var pid = document.getElementById('pid');
+			var price = document.getElementById('priceField');
+			var qty = document.getElementById('qty');
+			var description = document.getElementById('productList');
+			
+			var cartTotal = 0;
+			var t = document.getElementById('cartTbl');
+			t.innerHTML = '<h3 class="text-left">CART</h3>';
+			
+			
+			for(var x=0; x < cart.length; x++){
+				cartTotal+= cart[x].qty * cart[x].price;
+				
+				var row = t.insertRow(x);
+				
+				row.insertCell(0).innerText = cart[x].description;
+				row.insertCell(1).innerText = cart[x].qty;
+				row.insertCell(2).innerText = cart[x].price * cart[x].qty;
+				row.insertCell(3).innerHTML = '<span class="clickable" onclick="removeItem(' + x + ')" >Remove</span>';
+
+			}
+			t.innerHTML+="<tr><td></td><td><b>Total:</b></td><td style='text-align:right;'>$"+cartTotal+"</td><td></td></tr>";
+			cart['total'] = cartTotal;
+			qty.value = '';
+			price.innerHTML = '';
+			document.getElementById('productList').selectedIndex = 0;
+		}
+		function removeItem(x){
+			cart.splice(x,1);
+			renderCart();
+		}
+		function checkout(event){
+			event.preventDefault();
+			var x = JSON.stringify(cart);
+			document.forms[0].elements['cart'].value = x;
+			document.forms[0].submit();
+		}
+	</script>
 </body>
 
 </html>

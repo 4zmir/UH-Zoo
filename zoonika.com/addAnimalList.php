@@ -15,14 +15,27 @@ if(!$_COOKIE['user_id']){
 }
 if ($_COOKIE['user_id']){
 
-	$sql="SELECT animal_name,animal_breed, animal_DOB, animal_gender, animal_display  from animal";
+	$sql="SELECT 
+	u.user_fname,
+	u.user_lname,
+	animal.animal_name,
+	animal.animal_DOB,
+	animal.animal_gender,
+	animal.animal_breed,
+	animal.animal_display,
+	animal.animal_time
+	
+	FROM animal 
+	LEFT JOIN `user`as u ON u.user_id = animal.user_id
+	ORDER BY animal.animal_name";
 		
 	$db->query($sql);
 	$result = $db->resultSet();
+	}
 	//$rowNum = $db->rowCount();
 	// echo "<pre>";
 	// echo print_r($result);die;
-}
+
 
 ?>
 
@@ -67,6 +80,8 @@ if ($_COOKIE['user_id']){
 				  <th>Animal DOB</th>
                   <th>Animal Gender</th>
                   <th>At Display</th>
+				   <th>Who added</th>
+				   <th>When added</th>
                 </tr>
               </thead>
 
@@ -82,6 +97,10 @@ if ($_COOKIE['user_id']){
 							<td>$item->animal_DOB</td>
 							<td>$item->animal_gender</td>
 							<td>$item->animal_display</td>
+							<td>$item->user_fname $item->user_lname</td>
+							<td>$item->animal_time</td>
+							
+							
 						</tr>";
 						$num++;
 				}

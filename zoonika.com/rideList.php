@@ -12,10 +12,15 @@ $user = $db->single();
 
 if(!$_COOKIE['user_id']){
 	header('Location: index.html');
+	
 }
 if ($_COOKIE['user_id']){
 
-	$sql="SELECT ride_name  from ride";
+	$sql="
+	SELECT ride.ride_name, u.user_fname, u.user_lname, ride.ride_time
+	FROM ride
+	LEFT JOIN user as u ON u.user_id = ride.user_id
+	order by ride_name";
 		
 	$db->query($sql);
 	$result = $db->resultSet();
@@ -61,6 +66,8 @@ if ($_COOKIE['user_id']){
                 <tr>
 					<th> #</th>
                     <th>Ride's Name</th>
+					<th>Who Added</th>
+					<th>When Added</th>
                   
                 </tr>
               </thead>
@@ -73,6 +80,8 @@ if ($_COOKIE['user_id']){
 					echo "<tr $shade>
 							<td>$num</td>
 							<td>$item->ride_name</td>
+							<td>$item->user_fname $item->user_lname</td>
+							<td>$item->ride_time</td>
 							
 						</tr>";
 						$num++;
