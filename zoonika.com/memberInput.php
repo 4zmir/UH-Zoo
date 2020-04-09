@@ -3,17 +3,20 @@ session_start();
 
 include "Database.php";
 
-if(!$_COOKIE['user_id']){
-	header('Location: index.html');
+if (!$_COOKIE['user_id']) {
+    header('Location: index.html');
 }
 
 $db = new Database();
 
-$sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
+$sql = "SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
 
-$sql="SELECT * from member";
+$sql = "SELECT sale.sale_id from sale 
+        left join product on sale.product_id = product.product_id
+        left join product_type on product.product_type_id = product_type.product_type_id
+        where product_type.product_type_id = '3'";
 $db->query($sql);
 $tp = $db->resultSet();
 
@@ -54,7 +57,14 @@ $tp = $db->resultSet();
             <h1>Add Member</h1>
 
             <label for="sale_id"><b>Sale ID:</b></label><br>
-            <input type="number" placeholder="Enter Sale ID" name="sale_id" required><br>
+            <select name="sale_id">
+                <option value="" selected>--Select Sale ID--</option>
+                <?PHP
+                foreach ($tp as $ptp) {
+                    echo "<option value='$ptp->sale_id'>$ptp->sale_id </option>";
+                }
+                ?>
+            </select><br>
 
             <label for="member_fname"><b>Member First Name:</b></label><br>
             <input type="text" placeholder="Enter First Name" name="member_fname" required><br>
