@@ -4,7 +4,7 @@ session_start();
 include "Database.php";
 
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
@@ -22,7 +22,7 @@ $user = $db->single();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="sale.css">
+    <link rel="stylesheet" href="product.css">
     <title>Sale Admin Menu</title>
 </head>
 <body>

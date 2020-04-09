@@ -49,7 +49,7 @@ Class loginClass
 			else{ echo"different admin";}
 		
 		} else {
-		exit(header("Location: http://www.zoonika.com?wp=1")); /* Wrong password, Go back to the same page  */
+		exit(header("Location: http://www.zoonika.com/login.php?wp=1")); /* Wrong password, Go back to the same page  */
 
 		}
 	 }

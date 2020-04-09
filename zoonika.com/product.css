@@ -182,11 +182,7 @@ input[type=date] {
   cursor: pointer;
 }
 
-.supAdminForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 

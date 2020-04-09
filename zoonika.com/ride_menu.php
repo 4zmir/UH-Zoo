@@ -4,7 +4,7 @@ session_start();
 include "Database.php";
 
 if(!$_COOKIE['user_id']){
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 $db = new Database();
