@@ -44,7 +44,7 @@ if(isset($_GET['nm'])){
                         
 
             <button class="cancel" type="button" onclick="location.href='login.html'">Cancel</button >
-            <button class="button" type="submit" onclick="location.href='login.html'">Submit</button >
+            <button class="button" type="submit">Submit</button >
 			
 
         </form>
