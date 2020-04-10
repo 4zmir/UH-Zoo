@@ -63,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
       <li class="side-li"><a class="side" href="member_menu.php">Dashboard</a></li>
       <li class="side-li"><a class="side" href="memberInput.php">Add New Member</a></li>
       <li class="side-li"><a class="side" href="memberList.php">List All Members</a></li>
+      <li class="side-li"><a class="side" href="memberReport.php">Member Reports</a></li>
       <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>
@@ -74,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <form method="post">
 
   <div id="container" style='margin-bottom:6em;text-align:center;'>
-    <h1> Search for a member</h1>
+    <h1> Search For A Member</h1>
 
     <input type="text" placeholder="Enter a word" name="svar" required><br>
 
