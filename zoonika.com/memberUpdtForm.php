@@ -24,12 +24,12 @@ if(isset($_GET['id']) && ($_GET['id']!== '')){
 	
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-        
-    $new_fname = $_POST['fname'];
-    $new_lname = $_POST['lname'];
-    $new_fsize = $_POST['fsize'];
 
-    $sql = "UPDATE member SET member_fname = '$new_fname', member_lname = '$new_lname', member_fsize = $new_fsize
+    $member_fname = $_POST['member_fname'];
+    $member_lname = $_POST['member_lname'];
+    $member_fsize = $_POST['member_fsize'];
+
+    $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize
 	        WHERE member_id = '$product_id' ";	
 	$db->query($sql);
 	$db->execute();
@@ -75,19 +75,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
    <form  method="post">
 		<div id="container" style='margin-bottom:6em;text-align:center;'>
-            <h1> Update Form For Member:</h1>
-            <h2 style="margin-top: -30px; margin-bottom: 50px; font-size: 35px;">
-                <?php echo $item->member_fname . " " . $item->member_lname; ?>
-            </h2>
-
+            <h1> Update Form For Members</h1>
+            
 				<label for="ride_name"><br><b>Member First name:</b></br></label>		 
-                <input type="text"  name="fname" value="<?php echo $item->member_fname; ?>" required ><br>
+                <input type="text"  name="member_fname" value="<?php echo $item->member_fname; ?>" required ><br>
 
                 <label for="ride_name"><b>Member Last name:</b></br></label>		 
-                <input type="text"  name="lname" value="<?php echo $item->member_lname; ?>" required ><br>
+                <input type="text"  name="member_lname" value="<?php echo $item->member_lname; ?>" required ><br>
 
                 <label for="member_fsize"><b>Family Size:</b></label><br>
-                <input type="number" name="fsize" value="<?php echo $item->member_fsize; ?>" required><br>
+                <input type="number" name="member_fsize" value="<?php echo $item->member_fsize; ?>" required><br>
 
 			<button class="cancel" type="button" onclick="location.href='member_menu.php'">Cancel</button >
 			<button class="button" type="submit">Submit</button >
