@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	 OR member.member_lname LIKE '%$svar%'
 	 OR u.user_fname LIKE '%$svar%' 
      OR u.user_lname LIKE '%$svar%' 
-     ORDER BY member_fname";
+     ORDER BY member_lname";
 
 
   $db->query($sql);
