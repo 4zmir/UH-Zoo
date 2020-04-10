@@ -54,7 +54,7 @@ if ($_COOKIE['user_id']){
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="superadmin_menu.php">Dashboard</a></li>
         <li class="side-li"><a class="side" href="supAdminEmpInput.php">Input New Employee</a></li>
-        <li class="side-li"><a class="side" href=#>Update Employee</a></li>
+        <li class="side-li"><a class="side" href="SupAdminUpdate.php">Update Employee</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
     </ul>
   </div>
