@@ -17,6 +17,10 @@ $sql="SELECT * from user";
 $db->query($sql);
 $tp = $db->resultSet();
 
+$sql="SELECT * from department";
+$db->query($sql);
+$department = $db->resultSet();
+
 ?>
 
 <!DOCTYPE html>
@@ -85,11 +89,11 @@ $tp = $db->resultSet();
         <label for="department_id"><b>What Department?</b></label>
           <select name="department_id" required>
               <option value="">--Please choose an option--</option>
-              <option value= 1 >Animal's department</option>
-              <option value= 2 >Membership's department</option>
-              <option value= 3 >Ride's department</option>
-              <option value= 5 >Sale's department</option>
-              <option value= 6 >Product's department</option><br></select>
+              <?PHP 
+                foreach($department as $dp){
+                  echo "<option value='$dp->department_id'>$dp->department_name </option>";
+                }							
+              ?>
               
         <button type="submit">Submit</button>
     </form>
