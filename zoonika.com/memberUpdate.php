@@ -18,14 +18,18 @@ $user = $db->single();
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $svar = $_POST['svar'];
   $sql = "
-	SELECT member.member_id, member.member_fname, member.member_lname, member.member_fsize, u.user_fname, u.user_lname, member.member_start
+  SELECT member.member_id, member.member_fname, member.member_lname, member.member_fsize, u.user_fname, u.user_lname, member.member_start, 
+  member.member_expire
 	FROM member
 	LEFT JOIN user as u ON u.user_id = member.user_id
      WHERE member.member_fname LIKE '%$svar%'
      OR member.member_id LIKE '%$svar%'
-	 OR member.member_lname LIKE '%$svar%'
-	 OR u.user_fname LIKE '%$svar%' 
-     OR u.user_lname LIKE '%$svar%'";
+	   OR member.member_lname LIKE '%$svar%'
+	   OR u.user_fname LIKE '%$svar%' 
+     OR u.user_lname LIKE '%$svar%'
+     OR member.member_fsize LIKE '%$svar%'
+     OR member.member_start LIKE '%$svar%'
+     OR member.member_expire LIKE '%$svar%'";
 
 
   $db->query($sql);
@@ -95,6 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <th>Family Size</th>
           <th>Who Added</th>
           <th>When Added</th>
+          <th>Membership Expiration</th>
           <th></th>
           <th></th </tr> </thead> <tbody>
           <?PHP
@@ -108,6 +113,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <td>$item->member_fsize</td>
                             <td>$item->user_fname $item->user_lname</td>
                             <td>$item->member_start</td>
+                            <td>$item->member_expire</td>
+
 							<td><a href='memberDelete.php?id=$item->member_id' >Delete</a></td>
 							<td><a href='memberUpdtForm.php?id=$item->member_id'>Update</a></td>
 						</tr>";

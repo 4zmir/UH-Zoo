@@ -53,8 +53,9 @@ Class MemberClass
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 		try{
-		$sql = "INSERT INTO  member (sale_id, member_fname, member_lname, member_fsize, user_id) 
-                VALUES ('$this->sale_id', '$this->member_fname', '$this->member_lname', '$this->member_fsize', '$this->user_id')";
+		$sql = "INSERT INTO  member (sale_id, member_fname, member_lname, member_fsize, user_id, member_expire) 
+                VALUES ('$this->sale_id', '$this->member_fname', '$this->member_lname', '$this->member_fsize', '$this->user_id'
+				, current_timestamp() + INTERVAL 1 YEAR)";
 		$this->db->query($sql);
 		$this->result = $this->db->execute();
 		echo '<script type="text/JavaScript">
@@ -69,7 +70,7 @@ Class MemberClass
                 	</script>'
                 	;
 		}
-		//header("Location: http://www.zoonika.com/prdtInput.php");
+		header("Location: http://www.zoonika.com/memberInput.php");
 		}
 	}
 }

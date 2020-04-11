@@ -28,12 +28,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $member_fname = $_POST['member_fname'];
     $member_lname = $_POST['member_lname'];
     $member_fsize = $_POST['member_fsize'];
+    $member_start = $_POST['member_start'];
 
-    $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize
-	        WHERE member_id = '$product_id' ";	
-	$db->query($sql);
-	$db->execute();
-	header('Location: memberUpdate.php');
+    if ($member_start == "Yes"){
+        echo "MEMBER IS RENEWING MEMBERSHIP";
+        $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize,
+                member_start = current_timestamp(), member_expire = current_timestamp() + INTERVAL 1 YEAR
+	              WHERE member_id = '$product_id' ";	
+	      $db->query($sql);
+	      $db->execute();
+	      header('Location: memberUpdate.php');
+    }
+    if ($member_start == "No"){
+        $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize
+	              WHERE member_id = '$product_id' ";	
+	      $db->query($sql);
+	      $db->execute();
+	      header('Location: memberUpdate.php');
+    }
 }
 
 
@@ -85,6 +97,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                 <label for="member_fsize"><b>Family Size:</b></label><br>
                 <input type="number" name="member_fsize" value="<?php echo $item->member_fsize; ?>" required><br>
+
+                <label for = "member_start"><b>Renewing Membership?</b></label><br>
+                <select name="member_start" required>
+                  <option value="" selected>--Select Option--</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+
+                </select><br>
 
 			<button class="cancel" type="button" onclick="location.href='member_menu.php'">Cancel</button >
 			<button class="button" type="submit">Submit</button >
