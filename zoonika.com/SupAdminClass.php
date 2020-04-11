@@ -30,7 +30,7 @@ Class SupAdminClass
         $this->user_email = $this->post['user_email'];
         $this->user_password = $this->post['user_password'];
 		$this->department_id = $this->post['department_id'];
-		
+		$this->user_id=$this->post['user_id'];
 
 		$sql = "SELECT * FROM user WHERE user_id = '$this->user_id'";
 		 

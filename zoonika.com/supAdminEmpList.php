@@ -15,16 +15,27 @@ if(!$_COOKIE['user_id']){
 }
 if ($_COOKIE['user_id']){
 
-	$sql="SELECT user.user_id, user.user_fname, user.user_lname, user.user_DOB, user.user_gender, user.user_email, user.user_password, user.user_create_date, d.department_name
-	FROM user 
-	LEFT JOIN `department`as d ON user.department_id = d.department_id
-  order by user.user_id";
+	$sql=
+	"SELECT 
+	u.user_id,
+	u.user_fname,
+	u.user_lname,
+	u.user_DOB, 
+	u.user_gender, 
+	u.user_email,
+	u.user_password,
+	u.user_create_date,
+	department.department_name
+	FROM user as u 
+	LEFT JOIN department 
+			ON u.department_id = department.department_id
+	ORDER BY department_name";
 		
 	$db->query($sql);
 	$result = $db->resultSet();
 	//$rowNum = $db->rowCount();
-	// echo "<pre>";
-	// echo print_r($result);die;
+	//echo "<pre>";
+	//echo print_r($result);die;
 	
 	
 	
@@ -62,15 +73,15 @@ if ($_COOKIE['user_id']){
 
   <header id="imgcontainer"></header>
 
-  <div id="container">
+  <div id="container" style='margin-bottom:6em;text-align:center;'>
     <h1>List of All Employees</h1>
     <table class="table-info" style="width:80%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
               <thead style="color:white;background:rgb(90, 156, 90);">
 					<tr>
-            <th>Employee ID</th>
             <th>Department</th>
-					  <th>First Name</th>
-					  <th>Last Name</th>
+			<th>Employee ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
             <th>DOB</th>
             <th>Gender</th>
             <th>Email</th>
@@ -85,8 +96,8 @@ if ($_COOKIE['user_id']){
 					foreach($result as $item){
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
             echo "<tr $shade>
+				<td>$item->department_name</td>
                 <td>$item->user_id</td>
-                <td>$item->department_name</td>
                 <td>$item->user_fname</td>
                 <td>$item->user_lname</td>
                 <td>$item->user_DOB</td>

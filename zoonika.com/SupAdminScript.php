@@ -3,5 +3,5 @@
 	include "SupAdminClass.php";
 	$profile = new SupAdminClass($_POST);
 	echo "<PRE>";
-	print_r($profile);
+	print_r($profile);die;
 	?>

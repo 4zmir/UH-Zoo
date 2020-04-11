@@ -28,7 +28,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	 OR user.user_email LIKE '%$svar%'
 	 OR user.user_password LIKE '%$svar%'
 	 OR user.user_create_date LIKE '%$svar%'
-	 OR d.department_name LIKE '%$svar%' ";
+	 OR d.department_name LIKE '%$svar%' 
+	 ORDER BY d.department_name";
 
 
 	 $db->query($sql);
@@ -92,8 +93,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <table class="table-info" style="width:80%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
               <thead style="color:white;background:rgb(90, 156, 90);">
                 <tr>
+					<th>Department</th>
 					<th>Employee ID</th>
-                    <th>Department</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>DOB</th>
@@ -112,8 +113,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 				foreach($result as $item){
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
+							<td>$item->department_name</td>
                             <td>$item->user_id</td>
-                            <td>$item->department_name</td>
                             <td>$item->user_fname</td>
                             <td>$item->user_lname</td>
                             <td>$item->user_DOB</td>
