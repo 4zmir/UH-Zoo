@@ -44,6 +44,7 @@ $tp = $db->resultSet();
         <ul class="side-ul">
             <li class="side-li"><a class="side" href="product_menu.php">Product Dashboard</a></li>
             <li class="side-li"><a class="side" href="prdList.php">List all product</a></li>
+	    <li class="side-li"><a class="side" href="productUpdate.php">Update a Product</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
         </ul>
     </div>
