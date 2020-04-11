@@ -52,13 +52,11 @@ $department = $db->resultSet();
 
   <header id="imgcontainer"></header>
 
-  <div id="container">
+     
+    <form action="supAdminScript.php" method="POST">
 
-      <header>
-          <h1> New Employee Form</h1>
-      </header>
-
-      <form class="supAdminForm" action="SupAdminScript.php" method="POST">
+      <div class="supAdminInput" id="container" style='margin-bottom:6em;text-align:center;'>
+        <h1> INPUT NEW EMPLOYEE</h1>
 
         <label for="user_fname"><b>Employee First Name</b></label>
           <input type="text" placeholder="Enter First Name" name="user_fname" required>
@@ -83,7 +81,7 @@ $department = $db->resultSet();
 
         <label for="user_member"><b>Is This User a Zoo Member?</b></label>
           <select name="user_member" required>
-          <option value="no">no ( for employee)</option>
+            <option value="no">no (for employee)</option>
           </select>
 
         <label for="department_id"><b>What Department?</b></label>
@@ -94,15 +92,14 @@ $department = $db->resultSet();
                   echo "<option value='$dp->department_id'>$dp->department_name </option>";
                 }							
               ?>
+          </select>
+          <button type="submit">Submit</button>
               
-        <button type="submit">Submit</button>
+        </div>
     </form>
 
-  </div>
 
   <script src="sidebar.js"></script>
 
 </body>
 </html>
-
-
