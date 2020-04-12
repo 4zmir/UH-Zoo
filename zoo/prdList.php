@@ -56,6 +56,7 @@ if ($_COOKIE['user_id']){
             <li class="side-li"><a class="side" href="product_menu.php">Dashboard</a></li>
             <li class="side-li"><a class="side" href="prdtInput.php">Add New Product</a></li>
 	    <li class="side-li"><a class="side" href="productUpdate.php">Update a Product</a></li>
+	    <li class="side-li"><a class="side" href="productReport.php">Product Reports</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
             
         </ul>
