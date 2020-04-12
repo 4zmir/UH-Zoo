@@ -63,8 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     </div>
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="product_menu.php">Dashboard</a></li>
+	<li class="side-li"><a class="side" href="prdtInput.php">Add a Product</a></li>
         <li class="side-li"><a class="side" href="prdList.php">List All Products</a></li>
-	<li class="side-li"><a class="side" href="productUpdate.php">Product Update</a></li>
+	<li class="side-li"><a class="side" href="productReport.php">Product Reports</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>
