@@ -36,15 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	              WHERE member_id = '$product_id' ";	
 	      $db->query($sql);
 	      $db->execute();
-	      header('Location: memberUpdate.php');
     }
     if ($member_start == "No"){
         $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize
 	              WHERE member_id = '$product_id' ";	
 	      $db->query($sql);
 	      $db->execute();
-	      header('Location: memberUpdate.php');
     }
+    header('Location: memberUpdate.php');
 }
 
 
