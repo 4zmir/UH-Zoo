@@ -31,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $member_start = $_POST['member_start'];
 
     if ($member_start == "Yes"){
-        echo "MEMBER IS RENEWING MEMBERSHIP";
         $sql = "UPDATE member SET member_fname = '$member_fname', member_lname = '$member_lname', member_fsize = $member_fsize,
                 member_start = current_timestamp(), member_expire = current_timestamp() + INTERVAL 1 YEAR
 	              WHERE member_id = '$product_id' ";	
