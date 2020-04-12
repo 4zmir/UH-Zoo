@@ -39,6 +39,7 @@ $user = $db->single();
             <li class="side-li"><a class="side" href="addAnimal.php">Add New Animal</a></li>
             <li class="side-li"><a class="side" href="addAnimalList.php">See All Animals</a></li>
 	    <li class="side-li"><a class="side" href="animalUpdate.php">Update an Animal</a></li>
+	    <li class="side-li"><a class="side" href="animalReport.php">Animal Reports</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
         </ul>
     </div>

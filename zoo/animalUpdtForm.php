@@ -68,7 +68,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="addAnimalMenu.php">Dashboard</a></li>
         <li class="side-li"><a class="side" href="addAnimalList.php">List All Animals</a></li>
-		<li class="side-li"><a class="side" href="animalUpdate.php">Animal Update</a></li>
+	<li class="side-li"><a class="side" href="animalUpdate.php">Animal Update</a></li>
+	<li class="side-li"><a class="side" href="animalReport.php">Animal Reports</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>
