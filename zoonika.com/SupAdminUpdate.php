@@ -122,7 +122,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                             <td>$item->user_email</td>
                             <td>$item->user_password</td>
                             <td>$item->user_create_date</td>
-							<td><a href='SupAdminDelete.php?id=$item->user_id' >Delete</a></td>
+              <td><a href='SupAdminDelete.php?id=$item->user_id' 
+              onclick=\"return confirm('Are you sure you want to delete $item->user_fname $item->user_lname?')\">Delete</a></td>
 							<td><a href='SupAdminUpdtForm.php?id=$item->user_id'>Update</a></td>
 						</tr>";
 						$num++;

@@ -114,7 +114,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 							<td>$item->product_price</td>
 							<td>$item->user_fname $item->user_lname</td>
 							<td>$item->product_time</td>
-							<td><a href='productDelete.php?id=$item->product_id' >Delete</a></td>
+							<td><a href='productDelete.php?id=$item->product_id'  
+							onclick=\"return confirm('Are you sure you want to delete $item->product_name?')\">Delete</a></td>
 							<td><a href='productUpdtForm.php?id=$item->product_id'>Update</a></td>
 							
 						</tr>";

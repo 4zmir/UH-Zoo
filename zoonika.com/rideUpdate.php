@@ -106,7 +106,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 							<td>$item->ride_name</td>
 							<td>$item->user_fname $item->user_lname</td>
 							<td>$item->ride_time</td>
-							<td><a href='rideDelete.php?id=$item->ride_id' >Delete</a></td>
+              <td><a href='rideDelete.php?id=$item->ride_id' 
+              onclick=\"return confirm('Are you sure you want to delete $item->ride_name?')\">Delete</a></td>
 							<td><a href='rideUpdtForm.php?id=$item->ride_id'>Update</a></td>
 							
 						</tr>";

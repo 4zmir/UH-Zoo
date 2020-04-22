@@ -115,7 +115,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <td>$item->member_start</td>
                             <td>$item->member_expire</td>
 
-							<td><a href='memberDelete.php?id=$item->member_id' >Delete</a></td>
+              <td><a href='memberDelete.php?id=$item->member_id' 
+              onclick=\"return confirm('Are you sure you want to delete $item->member_fname $item->member_lname?')\">Delete</a></td>
 							<td><a href='memberUpdtForm.php?id=$item->member_id'>Update</a></td>
 						</tr>";
             $num++;
