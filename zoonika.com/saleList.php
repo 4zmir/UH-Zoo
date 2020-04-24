@@ -20,7 +20,8 @@ if ($_COOKIE['user_id']){
 				u.user_fname AS fname,
 				u.user_lname AS lname,
 				product.product_name,
-				product.product_price				   
+				product.product_price,
+				sale.sale_qty				
 				FROM
 				sale
 				LEFT JOIN product ON sale.product_id = product.product_id
@@ -50,6 +51,12 @@ if ($_COOKIE['user_id']){
 	// echo "<pre>";
 	// echo print_r($result);die;
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
 
 ?>
 <!DOCTYPE html>
@@ -75,13 +82,14 @@ if ($_COOKIE['user_id']){
         <ul class="side-ul">
             <li class="side-li"><a class="side" href="sale_menu.php">Dashboard</a></li>
             <li class="side-li"><a class="side" href="saleInput.php">Add New Sale</a></li>
-            <li class="side-li"><a class="side" href="#">Update Sale</a></li>
+            <li class="side-li"><a class="side" href="saleUpdate.php">Update Sale</a></li>
+			<li class="side-li"><a class="side" href="saleReport.php">Report Sale</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
             
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+    <!-- <header id="imgcontainer"></header>-->
 
     <div id="container" style='margin-bottom:6em;text-align:center;'>
        <!-- POSTS -->
@@ -92,6 +100,7 @@ if ($_COOKIE['user_id']){
 					<th> #</th>
                     <th>Product Name</th>
 					<th>Price</th>
+					<th>Qty</th>
 					<th>Sale Date</th>
 					<th>Salesperson</th>
                   
@@ -102,12 +111,14 @@ if ($_COOKIE['user_id']){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdate = formatDate($item->sale_date);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$num</td>
 							<td>$item->product_name</td>
 							<td>$$item->product_price</td>
-							<td>$item->sale_date</td>
+							<td>$item->sale_qty</td>
+							<td>$ftdate</td>
 							<td>$item->fname $item->lname</td>
 							
 						</tr>";

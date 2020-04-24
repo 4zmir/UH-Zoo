@@ -15,6 +15,7 @@ Class SupAdminClass
     public $user_password;
 	public $department_id;
 	public $user_id;
+	public $user_added;
 
 	public $db;
 	public $result;
@@ -22,6 +23,8 @@ Class SupAdminClass
 	{
 		$this->db = new Database();
 		
+		
+		$this->id =$_COOKIE['user_id'];
 		$this->post = $post; // $_POST array from form;
         $this->user_fname = $this->post['user_fname'];
         $this->user_lname = $this->post['user_lname'];
@@ -31,17 +34,22 @@ Class SupAdminClass
         $this->user_password = $this->post['user_password'];
 		$this->department_id = $this->post['department_id'];
 		$this->user_id=$this->post['user_id'];
-
+		$this->user_added=$this->id;
 		$sql = "SELECT * FROM user WHERE user_id = '$this->user_id'";
 		 
 		$this->db->query($sql);
 		$this->result = $this->db->single();
+		
+		
+		//echo "<PRE>";
+		//print_r($this->user_id); die;
+		
 		$this->checkCookie();
 		$this->profileFill();
 	}
 	public function render(){
 	  echo "<PRE>";
-	  print_r($this->department_id);
+	  print_r($this->user_added);
 	}
 	
 	public function checkCookie(){
@@ -54,24 +62,27 @@ Class SupAdminClass
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 		try{
-		$sql = "INSERT INTO  user (user_fname, user_lname, user_DOB, user_gender, user_email, user_password, department_id) 
-                VALUES ('$this->user_fname', '$this->user_lname', '$this->user_DOB', '$this->user_gender', '$this->user_email', '$this->user_password', '$this->department_id')";
+		
+		$sql = "INSERT INTO  user (user_fname, user_lname, user_DOB, user_gender, user_email, user_password, department_id, user_added ) 
+                VALUES ('$this->user_fname', '$this->user_lname', '$this->user_DOB', '$this->user_gender', '$this->user_email', '$this->user_password', '$this->department_id', '$this->user_added')";
 
 		$this->db->query($sql);
 		$this->result = $this->db->execute();
 		echo '<script type="text/JavaScript">
 		alert("Employee was successfully added.");
-            	window.location.replace("supAdminEmpList.php");
+            	window.location.replace("supAdminEmpInput.php");
             	</script>'
             	;
 		}catch(PDOException $e){
 			echo '<script type="text/JavaScript">
-                	alert("An error occured when inserting this employee (Possibly a duplicate).");
-                	window.location.replace("supAdminEmpInput.php");
-                	</script>'
-                	;
+                alert("You have reached the max number of 3 in this Super Admin Department.");
+                window.location.replace("http://www.zoonika.com/supAdminEmpInput.php");
+                </script>'
+                ;
 		}
-		//header("Location: http://www.zoonika.com/prdtInput.php");
+		
+		
+		//header("Location: http://www.zoonika.com/supAdminEmpInput.php");
 		}
 	}
 }

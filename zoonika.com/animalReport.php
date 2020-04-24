@@ -14,6 +14,12 @@ $sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
 
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 	
 	$startday = $_POST['startday'] . " 00:00:00";
@@ -73,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+   <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
    
    </body>
@@ -126,7 +132,21 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 						</tr>";
 						$num++;
                 }
+                $num--;
 			 ?>
+			 <tfoot style="background:#b4edc3">
+				<tr>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				  <td><b>Total:<b></td>
+				  <td><b><?PHP echo"$num animal(s) added";  ?><b></td>
+				  <td></td>
+				  <td></td>
+				</tr>
+			  </tfoot>
               </tbody>
             </table>
     </div>

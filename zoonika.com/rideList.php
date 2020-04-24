@@ -28,6 +28,12 @@ if ($_COOKIE['user_id']){
 	// echo "<pre>";
 	// echo print_r($result);die;
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
 
 ?>
 <!DOCTYPE html>
@@ -53,11 +59,13 @@ if ($_COOKIE['user_id']){
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="ride_menu.php">Dashboard</a></li>
         <li class="side-li"><a class="side" href="rideInput.php">Add New Ride</a></li>
+		<li class="side-li"><a class="side" href="rideUpdate.php">Ride Update</a></li>
+		<li class="side-li"><a class="side" href="rideReport.php">Reports for Ride</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
     <div id="container" style='margin-bottom:6em;text-align:center;'>
      <!-- POSTS -->
   <h1>List of All Rides</h1>
@@ -76,12 +84,13 @@ if ($_COOKIE['user_id']){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdate = formatDate($item->ride_time);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$num</td>
 							<td>$item->ride_name</td>
 							<td>$item->user_fname $item->user_lname</td>
-							<td>$item->ride_time</td>
+							<td>$ftdate</td>
 							
 						</tr>";
 						$num++;

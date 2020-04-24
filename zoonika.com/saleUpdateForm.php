@@ -15,23 +15,34 @@ $db->query($sql);
 $user = $db->single();
 
 if(isset($_GET['id']) && ($_GET['id']!== '')){
-	$product_id = $_GET['id'];
+	$change_id = $_GET['id'];
 
 
-	$sql="SELECT * from ride where ride_id = '$product_id'";
+	$sql="SELECT sale.sale_id, sale.sale_qty, sale.product_id, product.product_name, product.product_id 
+	from sale
+	LEFT JOIN product ON product.product_id = sale.product_id
+	WHERE sale.sale_id = '$change_id'";
 	$db->query($sql);
 	$item = $db->single();
 	
+	$sql ="select * from product";
+	$db->query($sql);
+	$prod =$db->resultSet();
+	
+	
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-
-	$svar = $_POST['svar'];
+	$sale_qty = $_POST['sale_qty'];
+	$prd_id = $_POST['prd_id'];
+	
+	
+	
 	$sql="
-	UPDATE ride SET ride_name = '$svar'
-	WHERE ride_id = '$product_id' ";	
+	UPDATE sale SET sale_qty = '$sale_qty', product_id = '$prd_id'
+	WHERE sale_id = '$change_id' ";	
 	$db->query($sql);
 	$db->execute();
-	header('Location: rideUpdate.php');
+	header('Location: saleUpdate.php');
 	// echo "<pre>";
 	 //echo print_r($vv);die;
 	
@@ -68,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     </ul>
   </div>
 
-   <!--- <header id="imgcontainer"></header> -->
+ <!-- <header id="imgcontainer"></header>-->
    <script src="sidebar.js"></script>
    
    </body>
@@ -76,10 +87,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
    <form  method="post">
 		<div id="container" style='margin-bottom:6em;text-align:center;'>
-			<h1> Update Form For the Rides</h1>
-				<label for="ride_name"><br>Ride description:</br></label>		 
-				<input type="text"  name="svar" value="<?php echo $item->ride_name; ?>" required ><br>
-			<button class="cancel" type="button" onclick="location.href='ride_menu.php'">Cancel</button >
+			<h1> Update Form For the Sale</h1>
+				<label for="poduct_name"><br><b>Product name:</b></br></label>	
+				<select name="prd_id" required>				
+               
+				<option value="<?php echo $item->product_id; ?>" selected><?php echo $item->product_name; ?></option>
+                 <?php 
+				 foreach($prod as $pd){
+				 echo "<option value='$pd->product_id'>$pd->product_name </option>";}
+                ?>						
+                </select><br>
+
+                <label for="sale_qty"><b>Sale qty:</b></br></label>		 
+                <input type="text"  name="sale_qty" value="<?php echo $item->sale_qty; ?>" required ><br>
+
+				
+			<button class="cancel" type="button" onclick="location.href='sale_menu.php'">Cancel</button >
 			<button class="button" type="submit">Submit</button >
         </div>
     </form>

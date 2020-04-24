@@ -59,7 +59,7 @@ Class forgotpasswordClass
 			//header("Location: login.html"); /*  */
 			echo '<script type="text/JavaScript">
             		alert("Your password was successfully updated.");
-           		window.location.replace("http://www.zoonika.com/login.html");
+           		window.location.replace("http://www.zoonika.com/login.php");
             		</script>'
 			;	
 		} 

@@ -13,10 +13,13 @@ $sql = "SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
 
-$sql = "SELECT sale.sale_id from sale 
+$sql = "SELECT sale.sale_date, sale.sale_id, product.product_name, user.user_fname, user.user_lname
+		from sale 
         left join product on sale.product_id = product.product_id
+		left join user on user.user_id = sale.user_id
         left join product_type on product.product_type_id = product_type.product_type_id
-        where product_type.product_type_id = '3'";
+        where product_type.product_type_id = '3'
+		order by sale.sale_date desc";
 $db->query($sql);
 $tp = $db->resultSet();
 
@@ -51,18 +54,18 @@ $tp = $db->resultSet();
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+    <!--- <header id="imgcontainer"></header> -->
 
     <div id="container" style='margin-bottom:6em;text-align:center;'>
         <form action="memberScript.php" method="post">
             <h1>Add Member</h1>
 
-            <label for="sale_id"><b>Sale ID:</b></label><br>
+            <label for="sale_id"><b>Sale date, Memebership Type, Sale Person Name:</b></label><br>
             <select name="sale_id">
                 <option value="" selected>--Select Sale ID--</option>
                 <?PHP
                 foreach ($tp as $ptp) {
-                    echo "<option value='$ptp->sale_id'>$ptp->sale_id </option>";
+                    echo "<option value='$ptp->sale_id'>$ptp->sale_date  $ptp->product_name $ptp->user_fname $ptp->user_lname</option>";
                 }
                 ?>
             </select><br>

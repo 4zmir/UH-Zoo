@@ -15,7 +15,7 @@ if (!$_COOKIE['user_id']) {
 }
 if ($_COOKIE['user_id']) {
 
-    $sql = "SELECT member.member_fname, member.member_lname, member.member_fsize, u.user_fname, u.user_lname 
+    $sql = "SELECT member.member_fname, member.member_expire, member.member_start, member.member_lname, member.member_fsize, u.user_fname, u.user_lname 
 	FROM member 
 	LEFT JOIN `user`as u ON u.user_id = member.user_id
 	order by member_lname";
@@ -29,6 +29,11 @@ if ($_COOKIE['user_id']) {
 
 
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
 
 ?>
 <!DOCTYPE html>
@@ -59,7 +64,7 @@ if ($_COOKIE['user_id']) {
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+    <!--- <header id="imgcontainer"></header> -->
 
     <div id="container" style='margin-bottom:6em;text-align:center;'>
         <h1>List of All Members</h1>
@@ -71,6 +76,8 @@ if ($_COOKIE['user_id']) {
                     <th>First Name </th>
                     <th>Family size </th>
                     <th>Who Added </th>
+					<th>Start Day </th>
+					<th>End Day </th>
                 </tr>
             </thead>
 
@@ -78,6 +85,8 @@ if ($_COOKIE['user_id']) {
                 <?PHP
                 $num = 1;
                 foreach ($result as $item) {
+					$ftdateSt = formatDate($item->member_start);
+					$ftdateEnd = formatDate($item->member_expire);
                     $shade = ($num % 2) ? 'style="background:#deffdc;"' : '';
                     echo "<tr $shade>
                                 <td>$num</td>
@@ -85,6 +94,8 @@ if ($_COOKIE['user_id']) {
 								<td>$item->member_fname</td>
                                 <td>$item->member_fsize</td>
 								<td>$item->user_fname $item->user_lname</td>
+								<td>$ftdateSt</td>
+								<td>$ftdateEnd</td>
 							</tr>";
                     $num++;
                 }

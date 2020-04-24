@@ -39,6 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   // echo print_r($result);die;
 
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
 
 
 ?>
@@ -72,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
   <script src="sidebar.js"></script>
 
 </body>
@@ -105,6 +110,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <?PHP
           $num = 1;
           foreach ($result as $item) {
+			$ftdateSt = formatDate($item->member_start);
+			$ftdateEnd = formatDate($item->member_expire);
             $shade = ($num % 2) ? 'style="background:#deffdc;"' : '';
             echo "<tr $shade>
                             <td>$num</td>
@@ -112,10 +119,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <td>$item->member_fname</td>
                             <td>$item->member_fsize</td>
                             <td>$item->user_fname $item->user_lname</td>
-                            <td>$item->member_start</td>
-                            <td>$item->member_expire</td>
-
-              <td><a href='memberDelete.php?id=$item->member_id' 
+                            <td>$ftdateSt</td>
+							<td>$ftdateEnd</td>
+							<td><a href='memberDelete.php?id=$item->member_id' 
               onclick=\"return confirm('Are you sure you want to delete $item->member_fname $item->member_lname?')\">Delete</a></td>
 							<td><a href='memberUpdtForm.php?id=$item->member_id'>Update</a></td>
 						</tr>";

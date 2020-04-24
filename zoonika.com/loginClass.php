@@ -17,11 +17,12 @@ Class loginClass
 		$this->post = $post; // $_POST array from form;
 		$this->user_email = $this->post['user_email'];
 		$this->user_password = $this->post['user_password'];
-		$this->department_id = $this->post['department_id'];
+		
 		$sql = "SELECT * FROM user WHERE user_email = '$this->user_email' AND user_password = '$this->user_password' ";
 
 		$this->db->query($sql);
 		$this->result = $this->db->single();
+		$this->department_id = $this->result->department_id;
 		$this->login();
 	}
 	public function login(){
@@ -32,24 +33,32 @@ Class loginClass
 		
 			if ($this->result->department_id =='1'){ /* Animal admin */
 
-			exit(header("Location: http://www.zoonika.com/addAnimalMenu.php")); /* Redirect browser */
+			exit(header("Location: addAnimalMenu.php")); /* Redirect browser */
 			}
 			if ($this->result->department_id =='3'){ /* Animal admin */
 
-			exit(header("Location: http://www.zoonika.com/ride_menu.php")); /* Redirect browser */
+			exit(header("Location: ride_menu.php")); /* Redirect browser */
 			}
 			if ($this->result->department_id =='5'){ /* Animal admin */
 
-			exit(header("Location: http://www.zoonika.com/sale_menu.php")); /* Redirect browser */
+			exit(header("Location: sale_menu.php")); /* Redirect browser */
 			}
 			if ($this->result->department_id =='6'){ /* Animal admin */
 
-			exit(header("Location: http://www.zoonika.com/product_menu.php")); /* Redirect browser */
+			exit(header("Location: product_menu.php")); /* Redirect browser */
+			}
+			if ($this->result->department_id =='2'){ /* Member admin */
+
+			exit(header("Location: member_menu.php")); /* Redirect browser */
+			}
+			if ($this->result->department_id =='4'){ /* Member admin */
+
+			exit(header("Location: superadmin_menu.php")); /* Redirect browser */
 			}
 			else{ echo"different admin";}
 		
 		} else {
-		exit(header("Location: http://www.zoonika.com/login.php?wp=1")); /* Wrong password, Go back to the same page  */
+		exit(header("Location: login.php?wp=1")); /* Wrong password, Go back to the same page  */
 
 		}
 	 }

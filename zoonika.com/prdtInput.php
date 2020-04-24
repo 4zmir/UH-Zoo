@@ -50,7 +50,7 @@ $tp = $db->resultSet();
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+    <!--- <header id="imgcontainer"></header> -->
 
 
     <script src="sidebar.js"></script>

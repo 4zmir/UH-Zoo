@@ -1,0 +1,2235 @@
+[01-Apr-2020 18:42:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/loginClass.php:28) in /home/nika/public_html/loginClass.php on line 29
+[01-Apr-2020 18:42:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/loginClass.php:28) in /home/nika/public_html/loginClass.php on line 31
+[01-Apr-2020 19:23:50 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 53
+[01-Apr-2020 19:25:12 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 53
+[01-Apr-2020 19:29:00 UTC] PHP Warning:  include(loginClass.php): failed to open stream: No such file or directory in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:29:00 UTC] PHP Warning:  include(): Failed opening 'loginClass.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:29:00 UTC] PHP Fatal error:  Uncaught Error: Class 'loginClass' not found in /home/nika/public_html/loginScript.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/loginScript.php on line 5
+[01-Apr-2020 19:29:53 UTC] PHP Warning:  include(loginClass.php): failed to open stream: No such file or directory in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:29:53 UTC] PHP Warning:  include(): Failed opening 'loginClass.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:29:53 UTC] PHP Fatal error:  Uncaught Error: Class 'LoginClass' not found in /home/nika/public_html/loginScript.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/loginScript.php on line 5
+[01-Apr-2020 19:30:06 UTC] PHP Warning:  include(loginClass.php): failed to open stream: No such file or directory in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:30:06 UTC] PHP Warning:  include(): Failed opening 'loginClass.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/nika/public_html/loginScript.php on line 4
+[01-Apr-2020 19:30:06 UTC] PHP Fatal error:  Uncaught Error: Class 'LoginClass' not found in /home/nika/public_html/loginScript.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/loginScript.php on line 5
+[01-Apr-2020 19:30:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nika_zoo.users' doesn't exist in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(34): Database->single()
+#3 /home/nika/public_html/addAnimalScript.php(4): ProfileClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:32:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Yes)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): ProfileClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): ProfileClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:32:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): ProfileClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): ProfileClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:33:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Yes)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): ProfileClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): ProfileClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:38:03 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:41:31 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:42:27 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:42:32 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:45:46 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:46:08 UTC] PHP Fatal error:  Uncaught Error: Class 'AddAnimalClass' not found in /home/nika/public_html/addAnimalScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/addAnimalScript.php on line 4
+[01-Apr-2020 19:48:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:50:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:51:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Yes)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:52:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Yes)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:52:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Yes)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 19:58:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:00:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:01:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:01:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:02:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''No)' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:06:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'department_id' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/AddAnimalClass.php(54): Database->execute()
+#2 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#3 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[01-Apr-2020 20:08:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:57
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 57
+[01-Apr-2020 20:08:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:57
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 57
+[01-Apr-2020 20:10:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:57
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(36): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 57
+[01-Apr-2020 20:10:46 UTC] PHP Warning:  The use statement with non-compound name 'PDOException' has no effect in /home/nika/public_html/AddAnimalClass.php on line 4
+[01-Apr-2020 20:10:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:58
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(37): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 58
+[01-Apr-2020 20:10:59 UTC] PHP Warning:  The use statement with non-compound name 'PDOException' has no effect in /home/nika/public_html/AddAnimalClass.php on line 4
+[01-Apr-2020 20:10:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:58
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(37): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 58
+[01-Apr-2020 20:12:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:58
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(37): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 58
+[01-Apr-2020 20:12:35 UTC] PHP Warning:  The use statement with non-compound name 'PDO' has no effect in /home/nika/public_html/AddAnimalClass.php on line 5
+[01-Apr-2020 20:12:35 UTC] PHP Warning:  The use statement with non-compound name 'PDOException' has no effect in /home/nika/public_html/AddAnimalClass.php on line 6
+[01-Apr-2020 20:12:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:60
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(39): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 60
+[01-Apr-2020 21:35:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[01-Apr-2020 21:41:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[01-Apr-2020 22:40:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[01-Apr-2020 23:27:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[02-Apr-2020 00:31:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[02-Apr-2020 02:28:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/rideList.php(11): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 02:30:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/rideList.php(11): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 02:30:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/rideList.php(11): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 02:32:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/rideList.php(11): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 02:32:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/rideList.php(11): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 02:42:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleList.php(21): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[02-Apr-2020 03:11:59 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/nika/public_html/addAnimalMenu.php on line 16
+[02-Apr-2020 03:12:11 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/nika/public_html/addAnimalMenu.php on line 16
+[02-Apr-2020 03:29:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[02-Apr-2020 05:03:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleList.php on line 104
+[02-Apr-2020 14:36:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[03-Apr-2020 01:53:38 UTC] PHP Fatal error:  Uncaught Error: Class 'SaleClass' not found in /home/nika/public_html/saleScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/saleScript.php on line 4
+[03-Apr-2020 01:54:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_id' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SaleClass.php(32): Database->single()
+#3 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[03-Apr-2020 02:00:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nika_zoo.users' doesn't exist in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SaleClass.php(30): Database->single()
+#3 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[03-Apr-2020 02:00:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nika_zoo.users' doesn't exist in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SaleClass.php(30): Database->single()
+#3 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[03-Apr-2020 02:00:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nika_zoo.users' doesn't exist in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SaleClass.php(30): Database->single()
+#3 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[03-Apr-2020 02:02:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[03-Apr-2020 02:03:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[03-Apr-2020 02:03:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[03-Apr-2020 02:05:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[03-Apr-2020 02:09:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[03-Apr-2020 02:14:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/SaleClass.php:35) in /home/nika/public_html/SaleClass.php on line 56
+[06-Apr-2020 15:56:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[07-Apr-2020 00:56:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/addAnimalList.php on line 76
+[07-Apr-2020 02:06:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleList.php on line 104
+[07-Apr-2020 16:42:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 103
+[07-Apr-2020 16:43:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 103
+[07-Apr-2020 16:44:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 103
+[07-Apr-2020 16:44:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 103
+[07-Apr-2020 16:44:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 100
+[07-Apr-2020 16:44:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/addAnimalList.php on line 100
+[07-Apr-2020 17:19:20 UTC] PHP Parse error:  syntax error, unexpected '".user_lname</td>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/nika/public_html/addAnimalList.php on line 96
+[07-Apr-2020 17:19:33 UTC] PHP Parse error:  syntax error, unexpected '".user_lname</td>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/nika/public_html/addAnimalList.php on line 96
+[07-Apr-2020 17:20:03 UTC] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/nika/public_html/addAnimalList.php on line 95
+[07-Apr-2020 17:20:08 UTC] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/nika/public_html/addAnimalList.php on line 95
+[07-Apr-2020 17:30:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SORT BY animal.animal_name' at line 10 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(30): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 17:53:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.animal_time
+	FROM animal LEFT JOIN user ON user.user_id = animal.user_id
+	ORD' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(31): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 17:53:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.animal_time
+	FROM animal LEFT JOIN user ON user.user_id = animal.user_id
+	ORD' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(31): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 17:54:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.animal_time
+	FROM animal LEFT JOIN user ON user.user_id = animal.user_id
+	ORD' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(31): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 17:54:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.animal_time
+	FROM animal LEFT JOIN user ON user.user_id = animal.user_id
+	ORD' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(31): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 17:55:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.animal_time
+	FROM animal LEFT JOIN user ON user.user_id = animal.user_id
+	ORD' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(31): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 18:05:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:58
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(37): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 58
+[07-Apr-2020 18:09:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:60
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(39): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 60
+[07-Apr-2020 18:09:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:60
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(39): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 60
+[07-Apr-2020 18:15:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:62
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(41): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 62
+[07-Apr-2020 18:20:05 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/nika/public_html/AddAnimalClass.php on line 48
+[07-Apr-2020 18:20:31 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/nika/public_html/AddAnimalClass.php on line 48
+[07-Apr-2020 18:21:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:45) in /home/nika/public_html/AddAnimalClass.php on line 51
+[07-Apr-2020 18:21:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:63
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 63
+[07-Apr-2020 18:24:12 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/nika/public_html/AddAnimalClass.php on line 58
+[07-Apr-2020 18:24:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:45) in /home/nika/public_html/AddAnimalClass.php on line 51
+[07-Apr-2020 18:24:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:63
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 63
+[07-Apr-2020 18:36:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:45) in /home/nika/public_html/AddAnimalClass.php on line 51
+[07-Apr-2020 18:36:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:63
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 63
+[07-Apr-2020 18:36:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:45) in /home/nika/public_html/AddAnimalClass.php on line 51
+[07-Apr-2020 18:36:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:63
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 63
+[07-Apr-2020 18:39:07 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 38
+[07-Apr-2020 18:39:37 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 38
+[07-Apr-2020 18:39:40 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 38
+[07-Apr-2020 18:41:17 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 41
+[07-Apr-2020 18:41:20 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 41
+[07-Apr-2020 18:42:10 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/nika/public_html/AddAnimalClass.php on line 42
+[07-Apr-2020 18:42:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:46) in /home/nika/public_html/AddAnimalClass.php on line 52
+[07-Apr-2020 18:42:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:64
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(43): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 64
+[07-Apr-2020 18:47:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:34) in /home/nika/public_html/AddAnimalClass.php on line 55
+[07-Apr-2020 18:47:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:68
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(46): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 68
+[07-Apr-2020 18:47:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:34) in /home/nika/public_html/AddAnimalClass.php on line 55
+[07-Apr-2020 18:47:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:68
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(46): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 68
+[07-Apr-2020 18:47:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:34) in /home/nika/public_html/AddAnimalClass.php on line 55
+[07-Apr-2020 18:47:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:68
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(46): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 68
+[07-Apr-2020 18:47:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:34) in /home/nika/public_html/AddAnimalClass.php on line 55
+[07-Apr-2020 18:47:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:68
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(46): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 68
+[07-Apr-2020 18:48:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/AddAnimalClass.php:34) in /home/nika/public_html/AddAnimalClass.php on line 55
+[07-Apr-2020 18:48:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:68
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(46): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 68
+[07-Apr-2020 18:48:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:64
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 64
+[07-Apr-2020 18:49:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:64
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(42): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 64
+[07-Apr-2020 18:59:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY animal.animal_name' at line 12 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(32): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 19:01:10 UTC] PHP Parse error:  syntax error, unexpected 'BY' (T_STRING) in /home/nika/public_html/addAnimalList.php on line 30
+[07-Apr-2020 19:01:27 UTC] PHP Parse error:  syntax error, unexpected 'ORDER' (T_STRING) in /home/nika/public_html/addAnimalList.php on line 30
+[07-Apr-2020 19:02:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_fname' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/addAnimalList.php(33): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 19:09:12 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/nika/public_html/AddAnimalClass.php on line 41
+[07-Apr-2020 19:09:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:66
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(44): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 66
+[07-Apr-2020 19:10:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:66
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(44): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 66
+[07-Apr-2020 19:10:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/AddAnimalClass.php:66
+Stack trace:
+#0 /home/nika/public_html/AddAnimalClass.php(44): AddAnimalClass->profileFill()
+#1 /home/nika/public_html/addAnimalScript.php(4): AddAnimalClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/AddAnimalClass.php on line 66
+[07-Apr-2020 19:13:18 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/nika/public_html/AddAnimalClass.php on line 28
+[07-Apr-2020 19:13:45 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/nika/public_html/AddAnimalClass.php on line 58
+[07-Apr-2020 21:17:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:17:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/addAnimalMenu.php(13): Database->query('SELECT * from u...')
+#1 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:17:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/addAnimalMenu.php(13): Database->query('SELECT * from u...')
+#1 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:18:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:19:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:21:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:23:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:23:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/nika/public_html/Database.php:42
+Stack trace:
+#0 /home/nika/public_html/loginClass.php(23): Database->query('SELECT * FROM u...')
+#1 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 42
+[07-Apr-2020 21:45:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_fname, u.user_lname 
+	FROM product 
+	LEFT JOIN `user`as u ON u.user_id = p' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/prdList.php(24): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 21:45:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_fname, u.user_lname 
+	FROM product 
+	LEFT JOIN `user`as u ON u.user_id = p' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/prdList.php(24): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 22:12:05 UTC] PHP Fatal error:  Uncaught Error: Class 'ProductClass' not found in /home/nika/public_html/productScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/productScript.php on line 4
+[07-Apr-2020 22:12:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:64
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(42): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 64
+[07-Apr-2020 22:23:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 22:23:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 22:30:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 22:30:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 22:31:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/ProductClass.php:40) in /home/nika/public_html/ProductClass.php on line 62
+[07-Apr-2020 22:47:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/prdtInput.php on line 73
+[07-Apr-2020 23:05:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 23:10:25 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/nika/public_html/ProductClass.php on line 35
+[07-Apr-2020 23:10:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/ProductClass.php:59
+Stack trace:
+#0 /home/nika/public_html/ProductClass.php(37): ProductClass->profileFill()
+#1 /home/nika/public_html/productScript.php(4): ProductClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/ProductClass.php on line 59
+[07-Apr-2020 23:45:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u ON u.user_id = ride.user_id
+	order by ride_name' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideList.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 23:48:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u ON u.user_id = ride.user_id
+	order by ride_name' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideList.php(26): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 23:48:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u ON u.user_id = ride.user_id
+	order by ride_name' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideList.php(26): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 23:49:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u ON u.user_id = ride.user_id
+	order by ride_name' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideList.php(26): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[07-Apr-2020 23:52:19 UTC] PHP Fatal error:  Uncaught Error: Class 'RideClass' not found in /home/nika/public_html/rideScript.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/rideScript.php on line 4
+[08-Apr-2020 00:18:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/RideClass.php:58
+Stack trace:
+#0 /home/nika/public_html/RideClass.php(36): RideClass->profileFill()
+#1 /home/nika/public_html/rideScript.php(4): RideClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/RideClass.php on line 58
+[08-Apr-2020 00:23:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/RideClass.php:58
+Stack trace:
+#0 /home/nika/public_html/RideClass.php(36): RideClass->profileFill()
+#1 /home/nika/public_html/rideScript.php(4): RideClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/RideClass.php on line 58
+[08-Apr-2020 00:23:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/RideClass.php:58
+Stack trace:
+#0 /home/nika/public_html/RideClass.php(36): RideClass->profileFill()
+#1 /home/nika/public_html/rideScript.php(4): RideClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/RideClass.php on line 58
+[08-Apr-2020 00:24:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/RideClass.php:58
+Stack trace:
+#0 /home/nika/public_html/RideClass.php(36): RideClass->profileFill()
+#1 /home/nika/public_html/rideScript.php(4): RideClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/RideClass.php on line 58
+[08-Apr-2020 00:24:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/RideClass.php:58
+Stack trace:
+#0 /home/nika/public_html/RideClass.php(36): RideClass->profileFill()
+#1 /home/nika/public_html/rideScript.php(4): RideClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/RideClass.php on line 58
+[08-Apr-2020 00:25:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/RideClass.php:39) in /home/nika/public_html/RideClass.php on line 61
+[08-Apr-2020 01:55:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/saleInput.php:13) in /home/nika/public_html/saleInput.php on line 18
+[08-Apr-2020 16:23:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 16:23:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 16:23:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 17:22:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 18:57:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 18:58:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 19:00:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:53
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(32): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 53
+[08-Apr-2020 19:06:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[08-Apr-2020 19:13:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:54
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 54
+[08-Apr-2020 19:21:04 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/nika/public_html/SaleClass.php on line 27
+[08-Apr-2020 19:21:43 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[08-Apr-2020 19:21:46 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[08-Apr-2020 19:22:40 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/nika/public_html/SaleClass.php on line 34
+[08-Apr-2020 19:23:09 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/nika/public_html/SaleClass.php on line 34
+[08-Apr-2020 19:24:32 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/nika/public_html/SaleClass.php on line 34
+[08-Apr-2020 19:24:45 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[08-Apr-2020 19:42:41 UTC] PHP Parse error:  syntax error, unexpected 'rideUpdate' (T_STRING), expecting ',' or ';' in /home/nika/public_html/rideList.php on line 86
+[08-Apr-2020 19:55:07 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/rideList.php on line 21
+[08-Apr-2020 20:00:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 19
+[08-Apr-2020 20:00:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/rideList.php on line 81
+[08-Apr-2020 20:10:01 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/nika/public_html/rideList.php on line 85
+[08-Apr-2020 20:10:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 83
+[08-Apr-2020 20:10:39 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 83
+[08-Apr-2020 20:11:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 83
+[08-Apr-2020 20:14:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 83
+[08-Apr-2020 20:26:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 82
+[08-Apr-2020 21:32:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/rideList.php on line 81
+[08-Apr-2020 21:55:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 98
+[08-Apr-2020 21:56:42 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/nika/public_html/rideList.php on line 84
+[08-Apr-2020 21:57:46 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideList.php on line 19
+[08-Apr-2020 21:58:33 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/rideList.php on line 21
+[08-Apr-2020 21:58:41 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/rideList.php on line 21
+[08-Apr-2020 23:02:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:02:34 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:03:23 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:03:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:04:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:04:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:04:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:04:42 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:05:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:05:09 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:05:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[08-Apr-2020 23:05:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/rideList.php on line 100
+[09-Apr-2020 01:46:45 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[09-Apr-2020 01:47:26 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[09-Apr-2020 02:32:08 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/nika/public_html/rideReport.php on line 67
+[09-Apr-2020 02:34:05 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/nika/public_html/rideReport.php on line 67
+[09-Apr-2020 03:38:33 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/nika/public_html/rideReport.php on line 32
+[09-Apr-2020 03:39:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR ride_input = 
+	OR ride_id = 
+	OR user_id =' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(28): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:48:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pppp' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(28): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:51:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(28): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:53:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:54:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:54:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:55:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:55:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:55:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'S' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 03:57:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_input' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(29): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 04:38:57 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[09-Apr-2020 15:05:53 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/nika/public_html/rideUpdate.php on line 110
+[09-Apr-2020 15:17:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/nika/public_html/rideDelete.php on line 5
+[09-Apr-2020 15:22:41 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/nika/public_html/rideDelete.php on line 7
+[09-Apr-2020 15:24:07 UTC] PHP Warning:  Use of undefined constant rideUpdate - assumed 'rideUpdate' (this will throw an Error in a future version of PHP) in /home/nika/public_html/rideDelete.php on line 4
+[09-Apr-2020 15:24:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/nika/public_html/rideDelete.php on line 4
+[09-Apr-2020 15:27:39 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/rideDelete.php on line 4
+[09-Apr-2020 15:30:58 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/rideDelete.php on line 4
+[09-Apr-2020 15:37:20 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nika/public_html/rideDelete.php on line 7
+[09-Apr-2020 15:40:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/rideDelete.php:5) in /home/nika/public_html/rideDelete.php on line 23
+[09-Apr-2020 15:41:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/rideDelete.php:5) in /home/nika/public_html/rideDelete.php on line 23
+[09-Apr-2020 15:41:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/rideDelete.php:5) in /home/nika/public_html/rideDelete.php on line 23
+[09-Apr-2020 15:42:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/rideDelete.php:5) in /home/nika/public_html/rideDelete.php on line 23
+[09-Apr-2020 15:46:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideDelete.php(23): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 16:23:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideDelete.php(23): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 16:26:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideDelete.php(23): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 16:32:14 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/nika/public_html/rideDelete.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/rideDelete.php on line 22
+[09-Apr-2020 16:32:37 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/nika/public_html/rideDelete.php on line 22
+[09-Apr-2020 17:11:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(31): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:12:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:12:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:13:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:13:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:14:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:80
+Stack trace:
+#0 /home/nika/public_html/Database.php(80): PDOStatement->fetch(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->single()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 80
+[09-Apr-2020 17:14:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home/nika/public_html/Database.php:74
+Stack trace:
+#0 /home/nika/public_html/Database.php(74): PDOStatement->fetchAll(5)
+#1 /home/nika/public_html/rideUpdtForm.php(32): Database->resultSet()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 74
+[09-Apr-2020 22:57:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(27): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 22:59:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BEFORE ''' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(27): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[09-Apr-2020 23:00:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BEFORE '%%'' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(27): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[10-Apr-2020 00:26:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleList.php on line 104
+[10-Apr-2020 16:49:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ride.ride_time <= '2020-04-09'
+	ORDER by ride.ride_time DESC' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(37): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[10-Apr-2020 16:50:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ride.ride_time =< '2020-04-09'
+	ORDER by ride.ride_time DESC' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(37): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[10-Apr-2020 16:50:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ride.ride_time < '2020-04-09'
+	ORDER by ride.ride_time DESC' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(37): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[10-Apr-2020 16:50:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ride.ride_time < '2020-04-09'
+	ORDER by ride.ride_time DESC' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/rideReport.php(37): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:37:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'department.department_id' in 'group statement' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(24): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:38:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_id' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(24): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:40:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_id' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(24): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:42:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_id' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(26): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:47:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(35): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:59:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(35): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:59:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(35): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 02:59:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:00:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:00:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:00:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:01:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:01:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' as u 
+	LEFT JOIN department 
+			ON u.department_id = department.departm' at line 11 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/supAdminEmpList.php(34): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 03:07:23 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/nika/public_html/supAdminEmpList.php on line 112
+[11-Apr-2020 03:07:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/supAdminEmpList.php on line 96
+[11-Apr-2020 03:09:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/supAdminEmpList.php on line 98
+[11-Apr-2020 03:09:51 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/supAdminEmpList.php on line 98
+[11-Apr-2020 04:54:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_added' doesn't have a default value in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(61): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(40): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:29:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(62): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(41): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:30:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(62): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(41): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:31:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(62): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(41): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:31:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(62): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(41): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:42:12 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SupAdminClass.php on line 36
+[11-Apr-2020 14:44:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:55:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:56:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 14:56:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:08:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(38): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:08:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(38): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:09:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(38): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:10:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(38): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:10:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(38): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 18:58:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:01:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:02:07 UTC] PHP Recoverable fatal error:  Object of class SupAdminClass could not be converted to string in /home/nika/public_html/SupAdminClass.php on line 35
+[11-Apr-2020 19:02:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(66): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(45): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:20:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '$this->user_id' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(70): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(49): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:24:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '$this->user_id' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(70): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(49): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:25:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(70): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(49): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:26:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(70): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(49): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:26:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_added' at row 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(70): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(49): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:31:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'odashuta@gmail.com' for key 'user_email' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminClass.php(69): Database->execute()
+#2 /home/nika/public_html/SupAdminClass.php(48): SupAdminClass->profileFill()
+#3 /home/nika/public_html/SupAdminScript.php(4): SupAdminClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 19:36:00 UTC] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/nika/public_html/SupAdminClass.php on line 75
+[11-Apr-2020 19:37:08 UTC] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/nika/public_html/SupAdminClass.php on line 75
+[11-Apr-2020 19:37:15 UTC] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/nika/public_html/SupAdminClass.php on line 75
+[11-Apr-2020 19:37:36 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/nika/public_html/SupAdminClass.php on line 79
+[11-Apr-2020 19:38:06 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/nika/public_html/SupAdminClass.php on line 79
+[11-Apr-2020 20:44:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM user as u
+	LEFT JOIN product ON u.product_id = product.product_id
+	 WHERE' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleUpdate.php(37): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 21:58:22 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 21:59:04 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 21:59:08 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 21:59:15 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 22:00:12 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 22:00:18 UTC] PHP Parse error:  syntax error, unexpected '$product_name' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 22:03:01 UTC] PHP Parse error:  syntax error, unexpected '$product_id' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 22:04:17 UTC] PHP Parse error:  syntax error, unexpected '$product_id' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 30
+[11-Apr-2020 22:05:15 UTC] PHP Parse error:  syntax error, unexpected '$product_id' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 32
+[11-Apr-2020 22:06:03 UTC] PHP Parse error:  syntax error, unexpected '$product_id' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 32
+[11-Apr-2020 22:06:09 UTC] PHP Parse error:  syntax error, unexpected '$product_id' (T_VARIABLE) in /home/nika/public_html/saleUpdateForm.php on line 32
+[11-Apr-2020 22:06:26 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/nika/public_html/saleUpdateForm.php on line 33
+[11-Apr-2020 22:06:28 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/nika/public_html/saleUpdateForm.php on line 33
+[11-Apr-2020 22:06:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT product ON product.product_id = sale.product_id
+	WHERE sale.sale_id = '13'' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/saleUpdateForm.php(25): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 22:09:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT product ON product.product_id = sale.product_id
+	WHERE sale.sale_id = '13'' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/saleUpdateForm.php(26): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 22:09:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT product ON product.product_id = sale.product_id
+	WHERE sale.sale_id = '13'' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/saleUpdateForm.php(26): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 22:10:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sale.sale_qrt' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/saleUpdateForm.php(26): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 22:18:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/nika/public_html/memberUpdtForm.php on line 89
+[11-Apr-2020 22:18:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/nika/public_html/memberUpdtForm.php on line 89
+[11-Apr-2020 22:18:38 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/nika/public_html/memberUpdtForm.php on line 89
+[11-Apr-2020 22:30:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/SupAdminUpdtForm.php on line 113
+[11-Apr-2020 22:49:22 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/nika/public_html/saleUpdateForm.php on line 94
+[11-Apr-2020 22:50:44 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/nika/public_html/saleUpdateForm.php on line 94
+[11-Apr-2020 23:03:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/rideList.php on line 80
+[11-Apr-2020 23:49:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'member.member_expire' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/memberUpdate.php(36): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[11-Apr-2020 23:51:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/memberUpdtForm.php:34) in /home/nika/public_html/memberUpdtForm.php on line 40
+[11-Apr-2020 23:52:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[12-Apr-2020 01:21:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/memberUpdtForm.php:34) in /home/nika/public_html/memberUpdtForm.php on line 40
+[12-Apr-2020 01:37:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[12-Apr-2020 01:40:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[12-Apr-2020 01:55:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 15:44:40 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/nika/public_html/SaleClass.php on line 28
+[13-Apr-2020 15:54:50 UTC] PHP Parse error:  syntax error, unexpected '"hello"' (T_CONSTANT_ENCAPSED_STRING) in /home/nika/public_html/saleScript.php on line 5
+[13-Apr-2020 16:10:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:55
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 55
+[13-Apr-2020 16:17:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOException::getMesssage() in /home/nika/public_html/SaleClass.php:55
+Stack trace:
+#0 /home/nika/public_html/SaleClass.php(33): SaleClass->profileFill()
+#1 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#2 {main}
+  thrown in /home/nika/public_html/SaleClass.php on line 55
+[13-Apr-2020 16:29:10 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/nika/public_html/SaleClass.php on line 36
+[13-Apr-2020 16:47:12 UTC] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/nika/public_html/SaleClass.php on line 62
+[13-Apr-2020 16:49:56 UTC] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/nika/public_html/SaleClass.php on line 62
+[13-Apr-2020 16:51:09 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in /home/nika/public_html/SaleClass.php on line 73
+[13-Apr-2020 16:51:50 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in /home/nika/public_html/SaleClass.php on line 66
+[13-Apr-2020 16:52:26 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/nika/public_html/SaleClass.php on line 66
+[13-Apr-2020 17:11:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SaleClass.php(60): Database->execute()
+#2 /home/nika/public_html/SaleClass.php(36): SaleClass->profileFill()
+#3 /home/nika/public_html/saleScript.php(4): SaleClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[13-Apr-2020 21:14:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 21:15:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 21:16:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 21:23:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/SaleClass.php:58) in /home/nika/public_html/SaleClass.php on line 64
+[13-Apr-2020 21:23:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/SaleClass.php:58) in /home/nika/public_html/SaleClass.php on line 64
+[13-Apr-2020 21:24:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/SaleClass.php:58) in /home/nika/public_html/SaleClass.php on line 64
+[13-Apr-2020 21:26:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 21:27:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[13-Apr-2020 21:29:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[14-Apr-2020 04:33:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product
+	LEFT JOIN product_type ON product.product_type_id = product_type.' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(51): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:35:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:35:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:36:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_type_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:36:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_type_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:38:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_type_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:38:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_type_id' at line 2 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(49): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 04:39:59 UTC] PHP Parse error:  syntax error, unexpected 'COUNT' (T_STRING) in /home/nika/public_html/productReport.php on line 45
+[14-Apr-2020 15:17:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/nika/public_html/productReport.php on line 126
+[14-Apr-2020 23:33:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE product.product_time >= '2020-04-14 00:00:00' AND product.product_time < '' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(53): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 23:34:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2020-04-14 23:59:59
+	GROUP BY product_type.product_type_id
+	ORDER BY product_' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(54): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[14-Apr-2020 23:36:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2020-04-14 23:59:59' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(51): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:12:47 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ']' in /home/nika/public_html/productReport.php on line 24
+[15-Apr-2020 00:21:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/nika/public_html/productReport.php on line 31
+[15-Apr-2020 00:32:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1221 Incorrect usage of UNION and ORDER BY in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(103): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:33:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(95): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:37:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product_type.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(81): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:57:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ORDER BY product_type.product_type_name)' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:57:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND (ORDER BY product_type.product_type_name)' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:57:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where ORDER BY product_type.product_type_name' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:58:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'HAVING ORDER BY product_type.product_type_name' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:59:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.product.product_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 00:59:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.product.product_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 01:00:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.product.product_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 01:00:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.product.product_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 01:01:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.product.product_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productReport.php(69): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:21:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 150
+[15-Apr-2020 02:21:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 150
+[15-Apr-2020 02:33:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY product_name' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:34:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_name' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:34:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:35:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:37:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:37:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:38:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:41:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY p.product_id' at line 7 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:43:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION nika_zoo.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(54): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:45:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION nika_zoo.Sum does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(54): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:46:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION nika_zoo.Sum does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(53): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:47:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1140 In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'nika_zoo.p.product_id'; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(53): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:55:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')as 'Sale by Product',
+	sale.sale_id,
+	sale.sale_qty, 
+	u.user_fname,
+	u.use' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:55:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')as 'Sale by Product'
+	sale.sale_id,
+	sale.sale_qty, 
+	u.user_fname,
+	u.user' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:56:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '>= '2020-04-0100:00:00' AND sale.sale_date < '2020-04-3023:59:59' 
+	GROUP BY pr' at line 12 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:56:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'product_id' in group statement is ambiguous in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:57:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.sale.sale_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:57:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.sale.sale_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(62): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 02:59:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM sale
+	LEFT JOIN product as p ON p.product_id = sale.product_id
+	WHERE sal' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(55): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:16:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM sale
+	LEFT JOIN product as p ON p.product_id = sale.product_id
+	WHERE sal' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(55): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:17:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM sale
+	LEFT JOIN product as p ON p.product_id = sale.product_id
+	WHERE sal' at line 3 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(55): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:20:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(55): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:21:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(55): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:33:26 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/nika/public_html/saleReport.php on line 158
+[15-Apr-2020 03:39:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 158
+[15-Apr-2020 03:40:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 158
+[15-Apr-2020 03:42:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.sale.sale_qty' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(56): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 03:45:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_id' in 'on clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(57): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 04:05:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 209
+[15-Apr-2020 04:05:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 209
+[15-Apr-2020 04:12:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.p.product_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(73): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 04:17:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.p.product_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(74): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 04:19:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.p.product_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(78): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 04:27:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 215
+[15-Apr-2020 04:27:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 215
+[15-Apr-2020 04:35:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 216
+[15-Apr-2020 04:36:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 216
+[15-Apr-2020 04:37:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 216
+[15-Apr-2020 04:41:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/saleReport.php on line 234
+[15-Apr-2020 04:51:01 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/nika/public_html/saleReport.php on line 245
+[15-Apr-2020 04:51:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/saleReport.php on line 271
+[15-Apr-2020 16:11:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM product_type Order By product_type_name)' at line 10 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(58): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:14:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE pt.product_type_id IN (SELECT * FROM product_type ORDER BY product_type_id' at line 9 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(59): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:16:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(58): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:16:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'nika_nika'@'localhost' for table 'product_type' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(58): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:20:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY sale.product_id 
+			ORDER BY qty_by_product' at line 10 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(59): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:21:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY qty_by_product' at line 12 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(60): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:41:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nika_zoo.sale.user_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(59): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:42:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product as p
+			LEFT JOIN sale ON p.product_id = sale.product_id
+			LEFT ' at line 5 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(58): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:47:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_fname,
+			u.user_lname
+			FROM sale
+			LEFT JOIN user as u ON u.user_id' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(104): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 16:48:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM sale
+			LEFT JOIN user as u ON u.user_id = sale.user_id
+			LEFT JOIN prod' at line 6 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(104): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 17:02:16 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/nika/public_html/saleReport.php on line 211
+[15-Apr-2020 17:30:33 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/nika/public_html/saleReport.php on line 211
+[15-Apr-2020 17:58:01 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 213
+[15-Apr-2020 18:06:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 279
+[15-Apr-2020 18:15:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_fname' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(134): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 19:05:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=< '2020-04-1523:59:59' 
+			GROUP BY sale.product_id 
+			ORDER BY qty_by_produ' at line 8 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/saleReport.php(58): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[15-Apr-2020 19:29:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/nika/public_html/saleReport.php on line 246
+[15-Apr-2020 19:36:22 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 248
+[15-Apr-2020 19:36:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/saleReport.php on line 249
+[15-Apr-2020 22:15:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[15-Apr-2020 22:17:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[16-Apr-2020 00:49:59 UTC] PHP Parse error:  syntax error, unexpected 'container' (T_STRING), expecting ',' or ';' in /home/nika/public_html/saleReport.php on line 226
+[16-Apr-2020 00:54:10 UTC] PHP Warning:  date_format() expects exactly 2 parameters, 1 given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 00:54:10 UTC] PHP Warning:  date_format() expects exactly 2 parameters, 1 given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 00:54:58 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 00:54:58 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 00:55:47 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 00:58:36 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/nika/public_html/saleReport.php on line 222
+[16-Apr-2020 03:19:43 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/nika/public_html/saleReport.php on line 270
+[16-Apr-2020 03:52:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function strototime() in /home/nika/public_html/saleReport.php:323
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/saleReport.php on line 323
+[16-Apr-2020 03:54:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/saleReport.php on line 323
+[16-Apr-2020 03:55:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/saleReport.php on line 323
+[16-Apr-2020 16:07:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function formatDate() in /home/nika/public_html/productReport.php:258
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/productReport.php on line 258
+[16-Apr-2020 16:28:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/productReport.php on line 206
+[16-Apr-2020 18:14:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/prdList.php on line 84
+[16-Apr-2020 18:28:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/productDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 18:35:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/productDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 18:36:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/productDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 18:44:08 UTC] PHP Parse error:  syntax error, unexpected '!', expecting '(' in /home/nika/public_html/productDelete.php on line 23
+[16-Apr-2020 18:45:27 UTC] PHP Parse error:  syntax error, unexpected '!', expecting '(' in /home/nika/public_html/productDelete.php on line 26
+[16-Apr-2020 18:45:29 UTC] PHP Parse error:  syntax error, unexpected '!', expecting '(' in /home/nika/public_html/productDelete.php on line 26
+[16-Apr-2020 18:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 28
+[16-Apr-2020 18:47:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 28
+[16-Apr-2020 18:47:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 28
+[16-Apr-2020 18:48:19 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/nika/public_html/productDelete.php on line 28
+[16-Apr-2020 18:48:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 28
+[16-Apr-2020 18:49:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 29
+[16-Apr-2020 18:49:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/productDelete.php:27) in /home/nika/public_html/productDelete.php on line 29
+[16-Apr-2020 19:01:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/nika/public_html/productDelete.php on line 34
+[16-Apr-2020 22:20:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productUpdate.php(40): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:20:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productUpdate.php(40): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:20:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productUpdate.php(40): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:21:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productUpdate.php(40): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:21:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.product_type_name' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/productUpdate.php(40): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:40:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[16-Apr-2020 22:40:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 22:08:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(23): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 22:13:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminDelete.php on line 47
+[21-Apr-2020 22:20:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(39): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 22:20:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(39): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 22:22:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/nika/public_html/SupAdminDelete.php on line 48
+[21-Apr-2020 22:26:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`nika_zoo`.`sale`, CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`)) in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/SupAdminDelete.php(39): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:15:42 UTC] PHP Warning:  Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) in /home/nika/public_html/SupAdminDelete.php on line 18
+[21-Apr-2020 23:35:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where user_id = '0'' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(25): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:35:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where user_id = '22'' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(25): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:36:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where u.user_id = '22'' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(25): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:41:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where u.user_id = '35' OR a.user_id = '35' OR r.user_id=' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(28): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:42:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where u.user_id = '35' OR a.user_id = '35' 
+	OR r.user_' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(29): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:42:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where u.user_id = '35' OR a.user_id = '35' 
+	OR r.user_' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(29): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[21-Apr-2020 23:45:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.user_id = u.user_id
+	where u.user_id = '35'' at line 4 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(28): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 00:03:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_added' in 'field list' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/SupAdminDelete.php(33): Database->single()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 01:16:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1=1''' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/loginClass.php(24): Database->single()
+#3 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 01:17:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1=1''' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/loginClass.php(24): Database->single()
+#3 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 01:18:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1==1''' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/loginClass.php(24): Database->single()
+#3 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 01:18:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'true'' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/loginClass.php(24): Database->single()
+#3 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 01:23:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' AND user_password = ''' at line 1 in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(79): Database->execute()
+#2 /home/nika/public_html/loginClass.php(24): Database->single()
+#3 /home/nika/public_html/loginScript.php(5): loginClass->__construct(Array)
+#4 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 02:56:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 31
+[22-Apr-2020 02:57:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 30
+[22-Apr-2020 02:57:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 30
+[22-Apr-2020 03:05:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unusual_sale.seen_by_admin.user_id' in 'on clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/superadmin_menu.php(22): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 03:06:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unusual_sale.seen_by_admin.user_id' in 'on clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/superadmin_menu.php(22): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 03:06:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unusual_sale.seen_by_admin.user_id' in 'on clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/Database.php(73): Database->execute()
+#2 /home/nika/public_html/superadmin_menu.php(22): Database->resultSet()
+#3 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 03:31:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function function_alert() in /home/nika/public_html/superadmin_menu.php:86
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/superadmin_menu.php on line 86
+[22-Apr-2020 03:34:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function function_alert() in /home/nika/public_html/superadmin_menu.php:120
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/superadmin_menu.php on line 120
+[22-Apr-2020 04:14:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:15:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:15:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:18:04 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/nika/public_html/superadmin_menu.php on line 25
+[22-Apr-2020 04:18:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:27:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:27:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:27:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 21
+[22-Apr-2020 04:36:35 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/superadmin_menu.php on line 125
+[22-Apr-2020 04:38:23 UTC] PHP Warning:  Use of undefined constant a - assumed 'a' (this will throw an Error in a future version of PHP) in /home/nika/public_html/superadmin_menu.php on line 19
+[22-Apr-2020 04:40:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 23
+[22-Apr-2020 04:40:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/superadmin_menu.php on line 23
+[22-Apr-2020 15:33:50 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/nika/public_html/superadmin_menu.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/superadmin_menu.php on line 24
+[22-Apr-2020 15:41:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sale_id' in 'where clause' in /home/nika/public_html/Database.php:68
+Stack trace:
+#0 /home/nika/public_html/Database.php(68): PDOStatement->execute()
+#1 /home/nika/public_html/superadmin_menu.php(25): Database->execute()
+#2 {main}
+  thrown in /home/nika/public_html/Database.php on line 68
+[22-Apr-2020 20:52:11 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/nika/public_html/saleList.php on line 121
+[22-Apr-2020 21:01:00 UTC] PHP Parse error:  syntax error, unexpected '/', expecting end of file in /home/nika/public_html/addAnimalList.php on line 36
+[23-Apr-2020 23:36:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function formatDate() in /home/nika/public_html/rideReport.php:140
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/rideReport.php on line 140
+[23-Apr-2020 23:38:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function formatDate() in /home/nika/public_html/rideReport.php:139
+Stack trace:
+#0 {main}
+  thrown in /home/nika/public_html/rideReport.php on line 139
+[23-Apr-2020 23:44:40 UTC] PHP Fatal error:  Cannot redeclare formatDate() (previously declared in /home/nika/public_html/productReport.php:21) in /home/nika/public_html/productReport.php on line 126
+[24-Apr-2020 00:01:54 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/nika/public_html/rideReport.php on line 147
+[24-Apr-2020 00:03:18 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/nika/public_html/rideReport.php on line 147
+[24-Apr-2020 00:12:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/nika/public_html/rideReport.php on line 146
+[24-Apr-2020 00:22:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nika/public_html/MemberClass.php:61) in /home/nika/public_html/MemberClass.php on line 73
+[24-Apr-2020 01:32:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:33:52 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:34:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:43:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:44:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:44:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247
+[24-Apr-2020 01:44:38 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/nika/public_html/SupAdminReport.php on line 247

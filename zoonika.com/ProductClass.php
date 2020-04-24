@@ -49,16 +49,23 @@ Class ProductClass
 	
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
-		$sql = "INSERT INTO  product (product_name, product_price, product_type_id, user_id) VALUES ('$this->product_name', '$this->product_price', '$this->product_type_id', '$this->user_id')";
-		
 		try{
+		$sql = "INSERT INTO  product (product_name, product_price, product_type_id, user_id) VALUES ('$this->product_name', '$this->product_price', '$this->product_type_id', '$this->user_id')";
 		$this->db->query($sql);
 		$this->result = $this->db->execute();
+		echo '<script type="text/JavaScript">
+		alert("Product was successfully added.");
+            	window.location.replace("http://www.zoonika.com/prdList.php");
+            	</script>'
+            	;
 		}catch(PDOException $e){
-			echo $e->getMesssage();
-			die('died');
+			echo '<script type="text/JavaScript">
+                	alert("An error occured when inserting this product (Possibly a duplicate).");
+                	window.location.replace("http://www.zoonika.com/prdtInput.php");
+                	</script>'
+                	;
 		}
-		header("Location: http://www.zoonika.com/prdtInput.php");
+		//header("Location: http://www.zoonika.com/prdtInput.php");
 		}
 	}
 }

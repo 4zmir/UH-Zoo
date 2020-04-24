@@ -46,16 +46,23 @@ Class RideClass
 	
 	public function profileFill(){
 		if($_SERVER['REQUEST_METHOD']=='POST'){
-		$sql = "INSERT INTO ride (ride_name, department_id, user_id) VALUES ('$this->ride_name', '$this->department_id', '$this->user_id')";
-		
 		try{
+		$sql = "INSERT INTO ride (ride_name, department_id, user_id) VALUES ('$this->ride_name', '$this->department_id', '$this->user_id')";
 		$this->db->query($sql);
 		$this->result = $this->db->execute();
+		echo '<script type="text/JavaScript">
+            	alert("Ride was successfully added.");
+            	window.location.replace("http://www.zoonika.com/rideList.php");
+            	</script>'
+           	 ;
 		}catch(PDOException $e){
-			echo $e->getMesssage();
-			die('died');
+			echo '<script type="text/JavaScript">
+                alert("An error occured when inserting this ride (Possibly a duplicate).");
+                window.location.replace("http://www.zoonika.com/rideInput.php");
+                </script>'
+                ;
 		}
-		header("Location: http://www.zoonika.com/rideInput.php");
+		//header("Location: http://www.zoonika.com/rideInput.php");
 		}
 	}
 }

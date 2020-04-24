@@ -7,11 +7,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	
 	
 	$obj = json_decode($_POST['cart']);
+	echo "<PRE>";
+	print_r($obj);die;
+	
+	echo $obj[1]->description;
+	die;
+	
 
-
-	#foreach($obj as $o){
-		#echo "<div style='margin-bottom:.2em;background:lightblue;font-size:1.4em;'>" . $o->qty . " " . $o->description . "@" . $o->price . "</div>";
-	#}
+	foreach($obj as $o){
+		echo "<div style='margin-bottom:.2em;background:lightblue;font-size:1.4em;'>" . $o->qty . " " . $o->description . "@" . $o->price . "</div>";
+	}
 }
 
 if(!$_COOKIE['user_id']){
@@ -24,7 +29,7 @@ $sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
 
-$sql="SELECT * from product";
+$sql="SELECT * from product ORDER BY product_name";
 $db->query($sql);
 $items = $db->resultSet();
 
@@ -67,12 +72,14 @@ $items = $db->resultSet();
         <ul class="side-ul">
             <li class="side-li"><a class="side" href="sale_menu.php">Dashboard</a></li>
             <li class="side-li"><a class="side" href="saleList.php">List All Sales</a></li>
+			<li class="side-li"><a class="side" href="saleUpdate.php">Update Sale</a></li>
+			<li class="side-li"><a class="side" href="saleReport.php">Report Sale</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
             
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+  <!-- <header id="imgcontainer"></header>-->
 
     <div id="container" style='margin-bottom:6em;text-align:center;'>
 		<h1> INPUT NEW SALE</h1>
@@ -101,10 +108,11 @@ $items = $db->resultSet();
 					</tr>
 				</tbody>
 			</table>
-			<div style="margin-top:3em;margin-bottom:3em;">
+			<div id="tblContainer" style="margin-top:3em;margin-bottom:3em;">
+				
 				<table id="cartTbl" style="width: 80%;margin: auto;">
 				</table>
-				<form method="POST" action= "saleScript.php" method="post">
+				<form method="POST" action="saleScript.php">
 					<input type="hidden" name="cart">
 					<button style="background:greenyellow;" onclick="checkout(event);">Checkout</button>
 				</form>
@@ -131,8 +139,8 @@ $items = $db->resultSet();
 			var qty = document.getElementById('qty');
 			var description = document.getElementById('productList');
 			
-			if(qty.value == '' || isNaN(qty.value)){
-				alert('Please enter a quantity before adding to cart!!');
+			if(qty.value == '' || isNaN(qty.value) || qty.value <= 0){
+				alert('Please enter a valid quantity before adding to cart!!');
 				return;
 			}
 			
@@ -151,8 +159,12 @@ $items = $db->resultSet();
 			
 			var cartTotal = 0;
 			var t = document.getElementById('cartTbl');
-			t.innerHTML = '<h3 class="text-left">CART</h3>';
-			
+			t.innerHTML='';
+
+			if(cart.length == 0){
+				t.innerHTML = '';
+				return;
+			}
 			
 			for(var x=0; x < cart.length; x++){
 				cartTotal+= cart[x].qty * cart[x].price;
@@ -161,11 +173,11 @@ $items = $db->resultSet();
 				
 				row.insertCell(0).innerText = cart[x].description;
 				row.insertCell(1).innerText = cart[x].qty;
-				row.insertCell(2).innerText = cart[x].price * cart[x].qty;
+				row.insertCell(2).innerText = formatNum(cart[x].price * cart[x].qty,2);
 				row.insertCell(3).innerHTML = '<span class="clickable" onclick="removeItem(' + x + ')" >Remove</span>';
 
 			}
-			t.innerHTML+="<tr><td></td><td><b>Total:</b></td><td style='text-align:right;'>$"+cartTotal+"</td><td></td></tr>";
+			t.innerHTML+="<tr><td></td><td><b>Total:</b></td><td style='text-align:right;'>$"+formatNum(cartTotal,2)+"</td><td></td></tr>";
 			cart['total'] = cartTotal;
 			qty.value = '';
 			price.innerHTML = '';
@@ -180,6 +192,10 @@ $items = $db->resultSet();
 			var x = JSON.stringify(cart);
 			document.forms[0].elements['cart'].value = x;
 			document.forms[0].submit();
+		}
+		function formatNum(num,digits) {
+                num=num*1;
+			return num.toFixed(digits).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
 		}
 	</script>
 </body>

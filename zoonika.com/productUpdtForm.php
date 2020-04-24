@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
    
    </body>
@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
    <form  method="post">
 		<div id="container" style='margin-bottom:6em;text-align:center;'>
-			<h1> Update Form For the Products</h1>
+			<h1> Update Form For the Product</h1>
 				<label for="product_name"><br>Product description:</br></label>		 
 				<input type="text"  name="pname" value="<?php echo $item->product_name; ?>" required ><br>
 					

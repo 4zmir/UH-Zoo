@@ -35,8 +35,9 @@ $user = $db->single();
         </div>
         <ul class="side-ul">
             <li class="side-li"><a class="side" href="saleInput.php">Add New Sale</a></li>
-            <li class="side-li"><a class="side" href="#">Update Sale</a></li>
             <li class="side-li"><a class="side" href="saleList.php">List All Sales</a></li>
+			<li class="side-li"><a class="side" href="saleUpdate.php">Update Sale</a></li>
+			<li class="side-li"><a class="side" href="saleReport.php">Report Sale</a></li>
             <li class="side-li"><a class="side" href="logoutScript.php">Log Out</a></li>
         </ul>
     </div>

@@ -25,14 +25,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 //	print_r($endday);die;
 	
 $sql="
-    SELECT user.user_fname, user.user_lname, user.user_DOB, user.user_gender, 
-    user.user_email, user.user_password, user.user_create_date, d.department_name, 
-    u.user_fname as admin_fname, u.user_lname as admin_lname
-	FROM user
-    LEFT JOIN department as d ON d.department_id = user.department_id
-    LEFT JOIN user as u ON u.user_id = user.user_added
-	WHERE user.user_create_date >= '$startday' AND user.user_create_date  < '$endday'
-	ORDER by user.user_create_date DESC ";
+    SELECT u.user_fname, u.user_lname, u.user_DOB, u.user_gender, 
+    u.user_email, u.user_password, u.user_create_date, d.department_name, 
+    u.user_fname, u.user_lname
+	FROM user as u
+    LEFT JOIN department as d ON d.department_id = u.department_id
+	WHERE u.user_create_date >= '$startday' AND u.user_create_date  < '$endday'
+	ORDER by u.user_create_date DESC ";
 
 		
     $db->query($sql);
@@ -41,6 +40,7 @@ $sql="
 	// echo "<pre>";
 	// echo print_r($result);die;
 	
+
 }
 ?>
 
@@ -72,7 +72,7 @@ $sql="
     <li class="side-li"><a class="side" href="logoutScript.php">Logout</a></li>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
    
    </body>
@@ -92,7 +92,7 @@ $sql="
  <?PHP if($_SERVER['REQUEST_METHOD'] == "POST"){ ?>
 
   <div id="container" style='margin-bottom:6em;text-align:center;'>
-            <table class="table-info" style="width:60%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
+            <table class="table-info" style="width:80%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
               <thead style="color:white;background:rgb(90, 156, 90);">
                 <tr>
 					<th></th>
@@ -103,7 +103,6 @@ $sql="
                     <th>Gender</th>
                     <th>Email</th>
                     <th>Password</th>
-					<th>Who Added</th>
 					<th>When Added</th>         
                 </tr>
               </thead>
@@ -122,13 +121,26 @@ $sql="
                             <td>$item->user_gender</td>
                             <td>$item->user_email</td>
                             <td>$item->user_password</td>
-							<td>$item->admin_fname $item->admin_lname</td>
 							<td>$item->user_create_date</td>
 							
 						</tr>";
 						$num++;
 				}
+				$num--;
 			 ?>
+<tfoot style="background:#b4edc3">
+                <tr>
+                  <td></td>
+                  <td><b>Total:<b></td>
+                  <td><b><?PHP echo"$num";  ?><b></td>
+                  <td></td>
+                  <td></td>
+		  <td></td>
+                  <td></td>
+		  <td></td>
+                  <td></td>
+                </tr>
+              </tfoot>
               </tbody>
             </table>
     </div>

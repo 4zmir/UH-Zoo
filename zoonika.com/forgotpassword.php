@@ -39,12 +39,11 @@ if(isset($_GET['nm'])){
             <input type="text" placeholder="New Password" name="user_password" required><br>
 		
 	    <label for="passwordConfirm">Confirm Password:</label><br>
-            <input type="text" placeholder="Confirm New Password" name="passwordConfirm" required><br>		
-
+            <input type="text" placeholder="Confirm New Password" name="passwordConfirm" required><br>	
                         
 
-            <button class="cancel" type="button" onclick="location.href='login.html'">Cancel</button >
-            <button class="button" type="submit">Submit</button >
+            <button class="cancel" type="button" onclick="location.href='http://www.zoonika.com/login.php'">Cancel</button >
+            <button class="button" type="submit" onclick="location.href='forgotpasswordScript.php'">Submit</button >
 			
 
         </form>

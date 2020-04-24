@@ -9,7 +9,8 @@ if(!$_COOKIE['user_id']){
 
 $db = new Database();
 
-$sql="SELECT * from user where user_id = '$_COOKIE[user_id]'";
+$sql="SELECT * from user
+ where user_id = '$_COOKIE[user_id]'";
 $db->query($sql);
 $user = $db->single();
 
@@ -39,11 +40,13 @@ $user = $db->single();
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="ride_menu.php">Dashboard</a></li>
         <li class="side-li"><a class="side" href="rideList.php">List All Rides</a></li>
+		<li class="side-li"><a class="side" href="rideUpdate.php">Rides Update</a></li>
+		<li class="side-li"><a class="side" href="rideReport.php">Reports for Ride</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+   <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
    
    </body>

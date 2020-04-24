@@ -1,18 +1,4 @@
-<?PHP 
-/* Rdo not have it here, you need to put in in separate file, then the user log out it g*/
 
-if($_COOKIE['user_id']){
-	
-// set the expiration date to one hour ago
-setcookie('user_id', "", time() - 3600);
-
-
-header("Location: http://www.zoonika.com/index.html?ex=1"); /* Redirect browser to log in page*/
-
-}
-
-
-?>
 
 
 <!DOCTYPE html>
@@ -36,8 +22,7 @@ header("Location: http://www.zoonika.com/index.html?ex=1"); /* Redirect browser 
         </div>
         <ul class="side-ul">
             <li class="side-li"><a class="side" href="index.html">Home</a></li>
-            <li class="side-li"><a class="side" href="#">Events</a></li>
-            <li class="side-li"><a class="side" href="about.html">About Us</a></li>
+         
         </ul>
     </div>
 
@@ -58,8 +43,8 @@ header("Location: http://www.zoonika.com/index.html?ex=1"); /* Redirect browser 
                     <button class="submit" type="submit" name="submitbtn">Sign In</button><br>
 
                 </form><br><br><!--<br>-->
-                <a class = "underline" href="#">Forgot your password?</a><br>
-                <a class = "underline" href="#">Create an account</a><br>
+                <a class = "underline" href="forgotpassword.php">Forgot your password?</a><br>
+             
             </div>
         </div>
     </div>

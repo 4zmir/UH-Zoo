@@ -38,6 +38,8 @@ $user = $db->single();
     <ul class="side-ul">
         <li class="side-li"><a class="side" href="rideInput.php">Add New Ride</a></li>
         <li class="side-li"><a class="side" href="rideList.php">See All Rides</a></li>
+		<li class="side-li"><a class="side" href="rideUpdate.php">Update Ride</a></li>
+		<li class="side-li"><a class="side" href="rideReport.php">Reports for Ride</a></li>
         <li class="side-li"><a class="side" href="logoutScript.php">Log out</a></li>
     </ul>
   </div>

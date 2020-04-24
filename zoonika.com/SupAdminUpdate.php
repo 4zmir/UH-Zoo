@@ -39,6 +39,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	// echo print_r($result);die;
 
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
 
 
 ?>
@@ -64,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         <span></span>
     </div>
     <ul class="side-ul">
-        <li class="side-li"><a class="side" href="supadmin_menu.php">Dashboard</a></li>
+        <li class="side-li"><a class="side" href="superadmin_menu.php">Dashboard</a></li>
 		    <li class="side-li"><a class="side" href="supAdminEmpInput.php">Input New Employee</a></li>
         <li class="side-li"><a class="side" href="supAdminEmpList.php">See All Employees</a></li>
         <li class="side-li"><a class="side" href="SupAdminReport.php">Reports for Employee</a></li>
@@ -72,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+   <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
 
    </body>
@@ -90,7 +95,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
  <?PHP if($_SERVER['REQUEST_METHOD'] == "POST"){ ?>
 
   <div id="container" style='margin-bottom:6em;text-align:center;'>
-            <table class="table-info" style="width:80%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
+            <table class="table-info" style="width:95%;margin:auto;box-shadow: 2px 2px 12px #5a9c5a;">
               <thead style="color:white;background:rgb(90, 156, 90);">
                 <tr>
 					<th>Department</th>
@@ -111,18 +116,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdateDOB = formatDate($item->user_DOB);
+					$ftdate = formatDate($item->user_create_date);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$item->department_name</td>
                             <td>$item->user_id</td>
                             <td>$item->user_fname</td>
                             <td>$item->user_lname</td>
-                            <td>$item->user_DOB</td>
+                            <td>$$ftdateDOB</td>
                             <td>$item->user_gender</td>
                             <td>$item->user_email</td>
                             <td>$item->user_password</td>
-                            <td>$item->user_create_date</td>
-              <td><a href='SupAdminDelete.php?id=$item->user_id' 
+                            <td>$ftdate</td>
+							  <td><a href='SupAdminDelete.php?id=$item->user_id' 
               onclick=\"return confirm('Are you sure you want to delete $item->user_fname $item->user_lname?')\">Delete</a></td>
 							<td><a href='SupAdminUpdtForm.php?id=$item->user_id'>Update</a></td>
 						</tr>";

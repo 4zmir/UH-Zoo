@@ -32,10 +32,12 @@ if ($_COOKIE['user_id']){
 	$db->query($sql);
 	$result = $db->resultSet();
 	}
-	//$rowNum = $db->rowCount();
-	// echo "<pre>";
-	// echo print_r($result);die;
-
+	
+	function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
 
 ?>
 
@@ -69,7 +71,7 @@ if ($_COOKIE['user_id']){
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+   <!--- <header id="imgcontainer"></header> -->
     <div id="container" style='margin-bottom:6em;text-align:center;'>
          <!-- POSTS -->
   <h1>List of All Animals</h1>
@@ -81,7 +83,7 @@ if ($_COOKIE['user_id']){
                   <th>Animal Breed</th>
 				  <th>Animal DOB</th>
                   <th>Animal Gender</th>
-                  <th>At Display</th>
+                  <th>On Display</th>
 				   <th>Who added</th>
 				   <th>When added</th>
                 </tr>
@@ -91,6 +93,7 @@ if ($_COOKIE['user_id']){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdate = formatDate($item->animal_time);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$num</td>
@@ -100,7 +103,7 @@ if ($_COOKIE['user_id']){
 							<td>$item->animal_gender</td>
 							<td>$item->animal_display</td>
 							<td>$item->user_fname $item->user_lname</td>
-							<td>$item->animal_time</td>
+							<td>$ftdate</td>
 							
 							
 						</tr>";

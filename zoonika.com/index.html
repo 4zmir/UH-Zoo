@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Homepage</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel = "stylesheet" href="sidebar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <title>About Us</title>
 </head>
+
 <body>
-        
+
     <div id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">
             <span></span>
@@ -16,14 +20,45 @@
             <span></span>
         </div>
         <ul class="side-ul">
-            <li class="side-li"><a class="side" href="index.html">Home</a></li>
-            <li class="side-li"><a class="side" href="login.html">Login</a></li>
-            <li class="side-li"><a class="side" href="#">Events</a></li>
-            <li class="side-li"><a class="side" href="about.html">About Us</a></li>
+    
+            <li class="side-li"><a class="side" href="login.php">Login</a></li>
         </ul>
     </div>
-    <header id="imgcontainer"></header>
+
+    <header id="imgcontainer">
+    </header>
+
+    <div id="container">
+        <h1>About Us</h1>
+        <h2>TEAM 3 ZOO PROJECT</h2>
+        <div class="row">
+            <div class="column" align="left">
+				<h4>  Our website is made with the administration of a zoo in mind.
+				We have 6 different types of administrators: animal admin, member admin, product admin, 
+				ride admin, sale admin and super admin. Even though there are multiple types of administrators,
+				their actions are all fundamentally the same
+				Each admin will have the ability to add, delete, and update data.
+				In addition, they will also be able to display a list of the contents found in 
+				their specific table and make a report based on a start and end date.</h4>
+                
+            </div>
+            <div class="column" align="left">
+                <h4>
+				  Animal, member, ride and super administrators will be able to display a list of the contents found 
+				in their specific tables and make a report based on a start and end date. 
+				Sale administrators will be able to create a report by date interval and one or all available products
+				along with one specific salesperson or all available salespeople. Finally, product administrators 
+				will be able to generate a report based on a specific date interval and either all or one specific 
+				type of product.
+                </h4>
+            </div>
+        </div>
+        <div class="outline-container">
+            
+        </div>
+    </div>
 
     <script src="sidebar.js"></script>
+
 </body>
 </html>

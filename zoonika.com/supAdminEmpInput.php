@@ -49,7 +49,7 @@ $department = $db->resultSet();
     </div>
 	</body>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
   <script src="sidebar.js"></script>
   </body>
   
@@ -70,10 +70,25 @@ $department = $db->resultSet();
      <br>
     <input type="date" placeholder="Enter DOB" name="user_DOB" required>
      <br>
+	 
+	 
+	 
+	 <label for="user_gender"><b>Employee Gender</b></b></label><br>
+	   <select  name = "user_gender" required>
+                <option value="">--Select gender--</option>
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select><br>
+	 
+	 
+	 
 	 <label for="user_email"><b>Employee email</b></b></label>
      <br>
     <input type="text" placeholder="Enter email" name="user_email" required>
      <br>
+	 
+	 
+	 
 	 <label for="user_password"><b>Employee password</b></b></label>
      <br>
     <input type="text" placeholder="Enter password" name="user_password" required>
@@ -91,7 +106,7 @@ $department = $db->resultSet();
 	 
 	 
 
-    <button class="cancel" type="button" onclick="location.href='rideInput.php'">Cancel</button >
+    <button class="cancel" type="button" onclick="location.href='supAdminEmpInput.php'">Cancel</button >
     <button class="button" type="submit">Submit</button >
     
   </div>

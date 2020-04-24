@@ -36,10 +36,16 @@ if ($_COOKIE['user_id']){
 	//$rowNum = $db->rowCount();
 	//echo "<pre>";
 	//echo print_r($result);die;
-	
-	
-	
+		
 }
+
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
+
 
 ?>
 
@@ -71,7 +77,7 @@ if ($_COOKIE['user_id']){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
 
   <div id="container" style='margin-bottom:6em;text-align:center;'>
     <h1>List of All Employees</h1>
@@ -94,17 +100,19 @@ if ($_COOKIE['user_id']){
 				 <?PHP
 					$num=1;
 					foreach($result as $item){
+					$ftdateDOB = formatDate($item->user_DOB);
+					$ftdate = formatDate($item->user_create_date);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
             echo "<tr $shade>
 				<td>$item->department_name</td>
                 <td>$item->user_id</td>
                 <td>$item->user_fname</td>
                 <td>$item->user_lname</td>
-                <td>$item->user_DOB</td>
+                <td>$ftdateDOB</td>
                 <td>$item->user_gender</td>
                 <td>$item->user_email</td>
                 <td>$item->user_password</td>
-								<td>$item->user_create_date</td>
+				<td>$ftdate</td>
 								
 							</tr>";
 							$num++;

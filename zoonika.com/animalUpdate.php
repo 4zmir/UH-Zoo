@@ -38,6 +38,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 }
 
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
 
 ?>
 
@@ -70,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
 
    </body>
@@ -109,6 +115,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdate = formatDate($item->animal_time);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$num</td>
@@ -118,9 +125,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 							<td>$item->animal_breed</td>
 							<td>$item->animal_display</td>
 							<td>$item->user_fname $item->user_lname</td>
-							<td>$item->animal_time</td>
+							<td>$ftdate</td>
 							<td><a href='animalDelete.php?id=$item->animal_id' 
-
 							onclick=\"return confirm('Are you sure you want to delete $item->animal_name?')\">Delete</a></td>
 							<td><a href='animalUpdtForm.php?id=$item->animal_id'>Update</a></td>
 

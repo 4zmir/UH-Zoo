@@ -1,26 +1,19 @@
-<?php 
-
-//use \PDO;
-
-/*
-
+<?php 
+//use \PDO;
+/*
  *PDO Database Class
  *Connect to database
  *Create prepared statements
  *Bind values
  *Return rows and results
- */
-
- class Database{	
-     private $host= ;
-	 private $user= ;
-	 private $pass= ;
-	 private $dbname= ;
+ */
+ class Database{		 private $host= "localhost";	 private $user= "nika_nika";
+	 private $pass= "Nick2874@";
+	 private $dbname= "nika_zoo";
 	 public $lastInsertId;
 	 private $dbh;
 	 private $stmt;
-	 private $error;
-
+	 private $error;
 	 public function __construct(){
 		 //Set DSN
 		 $dsn='mysql:host='. $this->host . ';dbname=' . $this->dbname;
@@ -35,15 +28,12 @@
 			$this->error=$e->getMessage();
 			echo $this->error;
 		}
-	 }
-
+	 }
 	 //Prepare statement with query
 	 public function query($sql){
 		$this->stmt=$this->dbh->prepare($sql);
-	 }
-
-	 
-
+	 }
+	 
 	 //Bind values
 	 public function bind($param,$value,$type=null){
 		if(is_null($type)){
@@ -72,17 +62,14 @@
 	 public function resultSet(){
 		 $this->execute();
 		 return $this->stmt->fetchAll(PDO::FETCH_OBJ);
-	 }
-
+	 }
 	 //Get single record as object
 	 public function single(){
 		 $this->execute();
 		 return $this->stmt->fetch(PDO::FETCH_OBJ);
-	 }
-
+	 }
 	 //Get row count
 	 public function rowCount(){
 		 return $this->stmt->rowCount();
-	 }
-
+	 }
  }

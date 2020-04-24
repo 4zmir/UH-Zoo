@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+   <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
 
    </body>

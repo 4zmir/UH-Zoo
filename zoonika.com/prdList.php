@@ -25,10 +25,15 @@ if ($_COOKIE['user_id']){
 	//$rowNum = $db->rowCount();
 	// echo "<pre>";
 	// echo print_r($result);die;
-	
-	
-	
+		
 }
+
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
+
 
 ?>
 
@@ -62,7 +67,7 @@ if ($_COOKIE['user_id']){
         </ul>
     </div>
 
-    <header id="imgcontainer"></header>
+    <!--- <header id="imgcontainer"></header> -->
     <div id="container" style='margin-bottom:6em;text-align:center;'>
 
 		<!-- POSTS -->
@@ -82,13 +87,14 @@ if ($_COOKIE['user_id']){
 				 <?PHP
 					$num=1;
 					foreach($result as $item){
+						$ftdate = formatDate($result->product_time);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 						echo "<tr $shade>
 								<td>$num</td>
 								<td>$item->product_name</td>
 								<td>$item->product_price</td>
 								<td>$item->user_fname $item->user_lname</td>
-								<td>$item->product_time</td>
+								<td>$ftdate</td>
 								
 							</tr>";
 							$num++;

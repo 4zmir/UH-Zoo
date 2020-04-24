@@ -18,11 +18,11 @@ if(isset($_GET['id']) && ($_GET['id']!== '')){
 	$db->query($sql);
 	$user = $db->single();
 
-	$sql="DELETE FROM product WHERE product_id = '$product_id' ";
+	$sql="DELETE FROM sale WHERE sale_id = '$product_id' ";
 	$db->query($sql);
 	$db->execute();
 
-	exit(header('Location: productUpdate.php'));
+	exit(header('Location: saleUpdate.php'));
 
 
 } 	else {

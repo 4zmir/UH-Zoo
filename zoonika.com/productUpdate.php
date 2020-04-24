@@ -17,14 +17,24 @@ $user = $db->single();
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$svar = $_POST['svar'];
 	$sql="
-	SELECT product.product_id, product.product_type_id, product.product_name, product.product_price, u.user_fname, u.user_lname, product.product_time
+		SELECT product.product_id, 
+		product.product_type_id,
+		p.product_type_name,
+		product.product_name, 
+		product.product_price, 
+		u.user_fname,
+		u.user_lname, 
+		product.product_time
 	FROM product
 	LEFT JOIN user as u ON u.user_id = product.user_id
+	LEFT JOIN product_type as p On product.product_type_id = p.product_type_id
 	 WHERE product.product_name LIKE '%$svar%'
 	 OR product.product_time LIKE '%$svar%'
 	 OR product.product_price LIKE '%$svar%'
+	 OR p.product_type_name LIKE '%$svar%'
 	 OR u.user_fname LIKE '%$svar%' 
-	 OR u.user_lname LIKE '%$svar%' ";
+	 OR u.user_lname LIKE '%$svar%' 
+	 ORDER BY p.product_type_name";
 
 		
 	 $db->query($sql);
@@ -34,6 +44,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	// echo print_r($result);die;
 	
 }
+function formatDate($dayTime){
+	 $arr = explode(' ', $dayTime);
+	 $d = new DateTime($arr[0]);
+	 return $d->format('M d, Y');
+ }
 
 
 ?>
@@ -67,7 +82,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     </ul>
   </div>
 
-  <header id="imgcontainer"></header>
+  <!--- <header id="imgcontainer"></header> -->
    <script src="sidebar.js"></script>
    
    </body>
@@ -89,8 +104,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
               <thead style="color:white;background:rgb(90, 156, 90);">
                 <tr>
 					<th> #</th>
-                    			<th>product's id</th>
-					<th>product's type id</th>
+					<th>product's type</th>
 					<th>product's name</th>
 					<th>product's price</th>
 					<th>Who Added</th>
@@ -105,15 +119,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
              <?PHP
 				$num=1;
 				foreach($result as $item){
+					$ftdate = formatDate($item->product_time);
 					$shade = ($num % 2) ? 'style="background:#deffdc;"':'';
 					echo "<tr $shade>
 							<td>$num</td>
-							<td>$item->product_id</td>
-							<td>$item->product_type_id</td>
+							<td>$item->product_type_name</td>
 							<td>$item->product_name</td>
 							<td>$item->product_price</td>
 							<td>$item->user_fname $item->user_lname</td>
-							<td>$item->product_time</td>
+							<td>$ftdate</td>
 							<td><a href='productDelete.php?id=$item->product_id'  
 							onclick=\"return confirm('Are you sure you want to delete $item->product_name?')\">Delete</a></td>
 							<td><a href='productUpdtForm.php?id=$item->product_id'>Update</a></td>

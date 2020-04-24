@@ -54,17 +54,26 @@ Class AddAnimalClass
 
 	
 	public function profileFill(){
-		if($_SERVER['REQUEST_METHOD']=='POST'){
-		$sql = "INSERT INTO  animal (animal_name, department_id, animal_DOB, animal_gender, animal_breed, animal_display, user_id) VALUES ('$this->animal_name', '$this->department_id', '$this->animal_DOB', '$this->animal_gender', '$this->animal_breed', '$this->animal_display', '$this->user_id')";
-		
-		try{
-		$this->db->query($sql);
-		$this->result = $this->db->execute();
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+		try
+		{
+			$sql = "INSERT INTO  animal (animal_name, department_id, animal_DOB, animal_gender, animal_breed, animal_display, user_id) VALUES ('$this->animal_name', '$this->department_id', '$this->animal_DOB', '$this->animal_gender', '$this->animal_breed', '$this->animal_display', '$this->user_id')";
+			$this->db->query($sql);
+			$this->result = $this->db->execute();
+			echo '<script type="text/JavaScript">
+            		alert("Animal was successfully added.");
+           		window.location.replace("http://www.zoonika.com/addAnimalList.php");
+            		</script>'
+			;
 		}catch(PDOException $e){
-			echo $e->getMesssage();
-			die('died');
+			echo '<script type="text/JavaScript">
+                	alert("An error occured when inserting this animal (Possibly a duplicate).");
+               		window.location.replace("http://www.zoonika.com/addAnimal.php");
+                	</script>'
+			;
 		}
-		header("Location: http://www.zoonika.com/addAnimalList.php");
+		//header("Location: http://www.zoonika.com/addAnimalList.php");
 		}
 	}
 }

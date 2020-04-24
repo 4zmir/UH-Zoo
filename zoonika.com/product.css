@@ -18,7 +18,7 @@ body{
 }
 #imgcontainer{
     background-image: url("tiger.jpg");
-    height: 70vh;
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,8 +182,9 @@ input[type=date] {
   cursor: pointer;
 }
 
-.supAdminInput{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+
+
+
+
+
