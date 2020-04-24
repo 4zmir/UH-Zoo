@@ -1,6 +1,9 @@
 Team 3 ZOO project
 http://zoonika.com/        
 https://github.com/4zmir/UH-Zoo.git    //code + nika_zoo.sql
+
+
+
 zoonika.com is an internal application. It is made with the administration of a zoo in mind. We have 6 different types of administrators: 
 Admin Role:        Username:    	Password:
 animal admin:	       animal	       animal
